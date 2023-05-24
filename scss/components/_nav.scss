@@ -1,0 +1,23 @@
+@use '../00-abstracts' as *;
+
+.nav {
+    width: 70%;
+    max-width: rem(240px);
+    @include mq(small) {
+        width: 65%;
+        max-width: rem(400px);
+        font-size: rem(24px);
+        font-weight: 500;
+    }
+}
+    .nav__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__item a {
+        color: var(--accent);
+        &:hover {
+            color: var(--hover);
+        }
+    }

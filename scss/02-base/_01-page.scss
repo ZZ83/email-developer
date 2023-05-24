@@ -1,0 +1,16 @@
+@use '../00-abstracts' as *;
+
+body {
+    max-width: rem(1440px);
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary);
+}
+
+
+.wrapper {
+    padding: 0 1rem;
+    @include mq(medium) {
+        padding: 0 2rem;
+    }
+}
