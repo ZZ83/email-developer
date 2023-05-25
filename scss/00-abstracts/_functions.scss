@@ -1,0 +1,23 @@
+/*** Media Querie Mixins ***/
+@mixin mq($break) {
+    @if $break == "x-small" {
+        @media (min-width: 375px) {
+            @content;
+        }
+    }
+    @else if $break == "small" {
+        @media (min-width: 474px) {
+            @content;
+        }
+    }
+    @else if $break == "medium" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $break == "large" {
+        @media (min-width: 1440px) {
+            @content;
+        }
+    }
+}

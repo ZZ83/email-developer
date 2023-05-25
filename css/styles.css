@@ -365,22 +365,19 @@ html {
   box-sizing: inherit;
 }
 
-/********************** Convert Pixes to Rems Function **********************/
-/********************** Media Querie Mixins **********************/
-/********************** Overlay Placeholder **********************/
-/********************** Margin Placeholders **********************/
-/********************** Border Radius Placeholders **********************/
-/********************** Flexbox Placeholders **********************/
+/*** Media Querie Mixins ***/ /*** Convert Pixes to Rems Function ***/
 :root {
   --primary: #270245;
   --secondary: #FFFFFF;
   --accent: #FEFF38;
   --hover: #FE18D3;
   --fs-400: 1rem;
+  --fs-550: 1.5rem;
   --fs-700: 2.5rem;
   --lh-400: 1.625rem;
   --lh-700: 2.5rem;
-  --ls-700: -0.071;
+  --ls-550: -0.021rem;
+  --ls-700: -0.071rem;
 }
 @media (min-width: 768px) {
   :root {
@@ -402,8 +399,8 @@ html {
 body {
   max-width: 73.375rem;
   margin: 0 auto;
-  font-family: "Space Grotesk", sans-serif;
   background-color: var(--primary);
+  font-family: "Space Grotesk", sans-serif;
   color: var(--secondary);
 }
 
@@ -436,6 +433,7 @@ li {
 }
 
 a {
+  color: var(--secondary);
   text-decoration: none;
 }
 
@@ -478,8 +476,9 @@ a {
   .nav {
     width: 65%;
     max-width: 25rem;
-    font-size: 1.5rem;
+    font-size: var(--fs-550);
     font-weight: 500;
+    line-height: var(--ls-550);
   }
 }
 
@@ -497,8 +496,8 @@ a {
 }
 
 .hero {
-  text-align: center;
   margin-top: 2.5rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .hero {
@@ -521,7 +520,18 @@ a {
 }
 
 .hero__paragraph {
-  max-width: 27.8125rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .hero__paragraph {
+    max-width: 27.8125rem;
+    margin-bottom: 2.125rem;
+  }
+}
+@media (min-width: 1440px) {
+  .hero__paragraph {
+    margin-bottom: 4.125rem;
+  }
 }
 
 .hero__underline {
@@ -537,6 +547,14 @@ a {
   .hero__underline {
     margin-top: 6.5rem;
   }
+}
+
+.button {
+  padding-bottom: 0.625rem;
+  border-bottom: 2px solid var(--accent);
+}
+.button:hover {
+  color: var(--accent);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,9 @@
+@use '../00-abstracts' as *;
+
+.button {
+    padding-bottom: rem(10px);
+    border-bottom: 2px solid var(--accent);
+    &:hover {
+        color: var(--accent);
+    }
+}

@@ -1,8 +1,8 @@
 @use '../00-abstracts' as *;
 
 .hero {
-    text-align: center;
     margin-top: rem(40px);
+    text-align: center;
     @include mq(medium) {
         margin-top: rem(90px);
         text-align: left;
@@ -14,17 +14,20 @@
 
     .hero__header {
         margin-bottom: rem(24px);
-
     }
-
     .hero__span {
         color: var(--accent);
     }
-
     .hero__paragraph {
-        max-width: rem(445px);
+        margin-bottom: rem(24px);
+        @include mq(medium) {
+            max-width: rem(445px);
+            margin-bottom: rem(34px);
+        }
+        @include mq(large) {
+            margin-bottom: rem(66px);
+        }
     }
-
     .hero__underline {
         margin-top: rem(80px);
         border-bottom: 1px solid var(--accent);

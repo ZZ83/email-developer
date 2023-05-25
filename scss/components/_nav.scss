@@ -6,8 +6,9 @@
     @include mq(small) {
         width: 65%;
         max-width: rem(400px);
-        font-size: rem(24px);
+        font-size:   var(--fs-550);
         font-weight: 500;
+        line-height: var(--ls-550);
     }
 }
     .nav__items {

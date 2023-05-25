@@ -8,12 +8,14 @@
 
     // Font Size
     --fs-400: 1rem;
+    --fs-550: 1.5rem;
     --fs-700: 2.5rem;
     // Line Height
     --lh-400: 1.625rem;
     --lh-700: 2.5rem;
     //Letter Spacing
-    --ls-700: -0.071;
+    --ls-550: -0.021rem;
+    --ls-700: -0.071rem;
     @include mq(medium) {
         // Font Size
         --fs-400: 1.125rem;
