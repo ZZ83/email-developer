@@ -1,13 +1,35 @@
+@use '../00-abstracts' as *;
+
 :root {
     --primary:   #270245;
     --secondary: #FFFFFF;
     --accent:    #FEFF38;
     --hover:     #FE18D3;
 
-    --fs-350: 1.8rem;
-    --fs-400: 2.2rem;
-    --fs-450: 2.8rem;
-    --fs-500: 3.6rem;
-    --fs-550: 5.5rem;
-    --fs-600: 7.5rem;
+    // Font Size
+    --fs-400: 1rem;
+    --fs-700: 2.5rem;
+    // Line Height
+    --lh-400: 1.625rem;
+    --lh-700: 2.5rem;
+    //Letter Spacing
+    --ls-700: -0.071;
+    @include mq(medium) {
+        // Font Size
+        --fs-400: 1.125rem;
+        --fs-700: 4.5rem;
+        // Line Height
+        --lh-400: 1.75rem;
+        --lh-700: 4.5rem;
+        // Letter Spacing
+        --ls-700: -0.128rem;
+    }
+    @include mq(large) {
+        // Font Size
+        --fs-700: 5.5rem;
+        // Line Height
+        --lh-700: 5.5rem;
+        // Letter Spacing
+        --ls-700: -0.0.156rem;
+    }
 }

@@ -365,30 +365,46 @@ html {
   box-sizing: inherit;
 }
 
-:root {
-  --primary: #270245;
-  --secondary: #FFFFFF;
-  --accent: #FEFF38;
-  --hover: #FE18D3;
-  --fs-350: 1.8rem;
-  --fs-400: 2.2rem;
-  --fs-450: 2.8rem;
-  --fs-500: 3.6rem;
-  --fs-550: 5.5rem;
-  --fs-600: 7.5rem;
-}
-
 /********************** Convert Pixes to Rems Function **********************/
 /********************** Media Querie Mixins **********************/
 /********************** Overlay Placeholder **********************/
 /********************** Margin Placeholders **********************/
 /********************** Border Radius Placeholders **********************/
 /********************** Flexbox Placeholders **********************/
+:root {
+  --primary: #270245;
+  --secondary: #FFFFFF;
+  --accent: #FEFF38;
+  --hover: #FE18D3;
+  --fs-400: 1rem;
+  --fs-700: 2.5rem;
+  --lh-400: 1.625rem;
+  --lh-700: 2.5rem;
+  --ls-700: -0.071;
+}
+@media (min-width: 768px) {
+  :root {
+    --fs-400: 1.125rem;
+    --fs-700: 4.5rem;
+    --lh-400: 1.75rem;
+    --lh-700: 4.5rem;
+    --ls-700: -0.128rem;
+  }
+}
+@media (min-width: 1440px) {
+  :root {
+    --fs-700: 5.5rem;
+    --lh-700: 5.5rem;
+    --ls-700: -0.0.156rem;
+  }
+}
+
 body {
-  max-width: 90rem;
+  max-width: 73.375rem;
   margin: 0 auto;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .wrapper {
@@ -401,7 +417,14 @@ body {
 }
 
 h1 {
-  margin: 0;
+  font-size: var(--fs-700);
+  line-height: var(--lh-700);
+  letter-spacing: var(--ls-700);
+}
+
+p {
+  font-size: var(--fs-400);
+  line-height: var(--lh-400);
 }
 
 ul {
@@ -471,6 +494,49 @@ a {
 }
 .nav__item a:hover {
   color: var(--hover);
+}
+
+.hero {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+@media (min-width: 768px) {
+  .hero {
+    margin-top: 5.625rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    margin-top: 8rem;
+  }
+}
+
+.hero__header {
+  margin-bottom: 1.5rem;
+}
+
+.hero__span {
+  color: var(--accent);
+}
+
+.hero__paragraph {
+  max-width: 27.8125rem;
+}
+
+.hero__underline {
+  margin-top: 5rem;
+  border-bottom: 1px solid var(--accent);
+}
+@media (min-width: 768px) {
+  .hero__underline {
+    margin-top: 3.75rem;
+  }
+}
+@media (min-width: 1440px) {
+  .hero__underline {
+    margin-top: 6.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+@use '../00-abstracts' as *;
+
+.hero {
+    text-align: center;
+    margin-top: rem(40px);
+    @include mq(medium) {
+        margin-top: rem(90px);
+        text-align: left;
+    }
+    @include mq(large) {
+        margin-top: rem(128px);
+    }
+}
+
+    .hero__header {
+        margin-bottom: rem(24px);
+
+    }
+
+    .hero__span {
+        color: var(--accent);
+    }
+
+    .hero__paragraph {
+        max-width: rem(445px);
+    }
+
+    .hero__underline {
+        margin-top: rem(80px);
+        border-bottom: 1px solid var(--accent);
+        @include mq(medium) {
+            margin-top: rem(60px);
+        }
+        @include mq(large) {
+            margin-top: rem(104px);
+        }
+    }

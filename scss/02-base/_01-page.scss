@@ -1,10 +1,11 @@
 @use '../00-abstracts' as *;
 
 body {
-    max-width: rem(1440px);
+    max-width: rem(1174px);
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     background-color: var(--primary);
+    color: var(--secondary);
 }
 
 

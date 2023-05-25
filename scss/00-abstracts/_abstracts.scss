@@ -5,7 +5,12 @@
 
 /********************** Media Querie Mixins **********************/
 @mixin mq($break) {
-    @if $break == "small" {
+    @if $break == "x-small" {
+        @media (min-width: 375px) {
+            @content;
+        }
+    }
+    @else if $break == "small" {
         @media (min-width: 474px) {
             @content;
         }
