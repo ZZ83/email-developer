@@ -2,16 +2,18 @@
 
 .hero {
     margin-top: rem(40px);
+    padding-bottom: rem(80px);
     text-align: center;
     @include mq(medium) {
         margin-top: rem(90px);
+        padding-bottom: rem(60px);
         text-align: left;
     }
     @include mq(large) {
         margin-top: rem(128px);
+        padding-bottom: rem(104px);
     }
 }
-
     .hero__header {
         margin-bottom: rem(24px);
     }
@@ -26,15 +28,5 @@
         }
         @include mq(large) {
             margin-bottom: rem(66px);
-        }
-    }
-    .hero__underline {
-        margin-top: rem(80px);
-        border-bottom: 1px solid var(--accent);
-        @include mq(medium) {
-            margin-top: rem(60px);
-        }
-        @include mq(large) {
-            margin-top: rem(104px);
         }
     }

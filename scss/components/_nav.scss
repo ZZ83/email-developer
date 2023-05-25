@@ -19,6 +19,7 @@
     .nav__item a {
         color: var(--accent);
         &:hover {
-            color: var(--hover);
+            color: var(--secondary);
+            text-decoration: underline;
         }
     }

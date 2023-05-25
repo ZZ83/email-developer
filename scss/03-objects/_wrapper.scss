@@ -1,0 +1,10 @@
+@use '../00-abstracts' as *;
+
+.wrapper {
+    max-width: rem(1174px);
+    margin: 0 auto;
+    padding: 0 1rem;
+    @include mq(medium) {
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,18 @@
+@use '../00-abstracts' as *;
+
+.section {
+    padding-top:    rem(80px);
+    padding-bottom: rem(80px);
+    @include mq(medium) {
+        padding-top:    rem(100px);
+        padding-bottom: rem(100px);
+    }
+    @include mq(large) {
+        padding-top:    rem(140px);
+        padding-bottom: rem(140px);
+    } 
+}
+
+.section--skills {
+    background-color: #16213e;
+}

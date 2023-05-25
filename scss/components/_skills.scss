@@ -1,0 +1,30 @@
+@use '../00-abstracts' as *;
+
+.skills {
+    display: grid;
+    gap: rem(32px);
+    padding-top: rem(80px);
+    @include mq(medium) {
+        gap: rem(48px);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mq(large) {
+        gap: rem(64px);
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+    .skill {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: rem(28px) rem(24px) rem(24px);
+        background-color: #0f3460;
+        border-radius: 10px;
+    }
+        .skill__svg-icon {
+            width: 75%;
+            margin-bottom: rem(16px);
+            fill: var(--secondary);
+        }

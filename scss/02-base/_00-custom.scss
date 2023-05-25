@@ -1,29 +1,35 @@
 @use '../00-abstracts' as *;
 
 :root {
-    --primary:   #270245;
-    --secondary: #FFFFFF;
-    --accent:    #FEFF38;
-    --hover:     #FE18D3;
+    --primary:   #1a1a2e;
+    --secondary: #f1fafb;
+    --accent:    #e94560;
+    --hover:     #0f3460;
 
     // Font Size
     --fs-400: 1rem;
     --fs-550: 1.5rem;
+    --fs-600: 2rem;
     --fs-700: 2.5rem;
     // Line Height
     --lh-400: 1.625rem;
+    --lh-600: 2rem;
     --lh-700: 2.5rem;
     //Letter Spacing
     --ls-550: -0.021rem;
+    --ls-600: -0.063rem;
     --ls-700: -0.071rem;
     @include mq(medium) {
         // Font Size
         --fs-400: 1.125rem;
+        --fs-600: 3rem;
         --fs-700: 4.5rem;
         // Line Height
         --lh-400: 1.75rem;
+        --lh-600: 3rem;
         --lh-700: 4.5rem;
         // Letter Spacing
+        --ls-600: -0.094rem;
         --ls-700: -0.128rem;
     }
     @include mq(large) {
