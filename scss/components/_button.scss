@@ -2,8 +2,18 @@
 
 .button {
     padding-bottom: rem(10px);
+    border: none;
     border-bottom: 2px solid var(--accent);
     &:hover {
         color: var(--accent);
     }
+}
+
+.button--contact {
+    background: none;
+    cursor: pointer;
+    color: var(--secondary);
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
 }
