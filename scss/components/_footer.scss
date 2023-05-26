@@ -1,0 +1,9 @@
+@use '../00-abstracts' as *;
+
+.footer {
+    color: var(--secondary);
+    height: rem(116px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

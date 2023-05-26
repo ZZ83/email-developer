@@ -3,11 +3,9 @@
 .hero {
     margin-top: rem(40px);
     padding-bottom: rem(80px);
-    text-align: center;
     @include mq(medium) {
         margin-top: rem(90px);
         padding-bottom: rem(60px);
-        text-align: left;
     }
     @include mq(large) {
         margin-top: rem(128px);
@@ -23,7 +21,7 @@
     .hero__paragraph {
         margin-bottom: rem(24px);
         @include mq(medium) {
-            max-width: rem(445px);
+            max-width: rem(745px);
             margin-bottom: rem(34px);
         }
         @include mq(large) {

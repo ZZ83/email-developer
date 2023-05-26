@@ -1,20 +1,8 @@
 @use '../00-abstracts' as *;
 
 .contact {
-    text-align: center;
-    @include mq(large) {
-        display: flex;
-        justify-content: space-between;
-        text-align: left;
-    }
+   max-width: rem(700px);
 }
-    .contact__inner {
-        max-width: rem(445px);
-        margin: auto;
-        @include mq(large) {
-            margin: initial;
-        }
-    }
     .contact__header {
         margin-bottom: rem(20px);
     }
