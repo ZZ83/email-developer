@@ -1,0 +1,48 @@
+@use '../00-abstracts' as *;
+
+.project {
+    width: 100%;
+    margin-top: rem(80px);
+    padding: rem(32px) rem(16px);
+    border-radius: rem(10px);
+    background-color: #0f3460;
+    @include mq(small) {
+        padding: rem(32px) rem(24px);
+    }
+    @include mq(large) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+    .project__image {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        @include mq(large) {
+            width: 55%;
+        }
+    }
+    .project__header {
+        margin-top: rem(16px);
+        margin-bottom: rem(8px);
+        font-size: var(--fs-550);
+        @include mq(large) {
+            margin-top: rem(32px);
+        }
+    }
+    .project__paragraph {
+        margin-bottom: rem(16px);
+        @include mq(large) {
+            padding-right: rem(24px);
+        }
+    }
+    .project__list {
+        padding-left: rem(24px);
+        list-style-type: disc;
+        @include mq(small) {
+            padding-left: rem(32px);
+        }
+    }
+    .project__item {
+        padding-bottom: rem(8px);
+    }
