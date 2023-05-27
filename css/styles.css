@@ -409,6 +409,10 @@ html {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--primary);
   font-family: "Space Grotesk", sans-serif;
@@ -447,13 +451,18 @@ a {
 }
 
 .wrapper {
-  max-width: 73.375rem;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
 @media (min-width: 768px) {
   .wrapper {
     padding: 0 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 73.375rem;
   }
 }
 
@@ -467,15 +476,14 @@ a {
     padding-bottom: 6.25rem;
   }
 }
-@media (min-width: 1200px) {
-  .section {
-    padding-top: 8.75rem;
-    padding-bottom: 8.75rem;
-  }
-}
 
 .section--bg {
   background-color: #16213e;
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 4px solid var(--accent);
 }
 
 .header {
@@ -495,7 +503,7 @@ a {
 .logo {
   width: 2.5rem;
   height: 2.5rem;
-  fill: var(--accent);
+  fill: var(--secondary);
 }
 @media (min-width: 474px) {
   .logo {
@@ -531,10 +539,10 @@ a {
 }
 
 .nav__item a {
-  color: var(--accent);
+  color: var(--secondary);
 }
 .nav__item a:hover {
-  color: var(--secondary);
+  color: var(--accent);
   text-decoration: underline;
 }
 
@@ -545,13 +553,17 @@ a {
 @media (min-width: 768px) {
   .hero {
     margin-top: 5.625rem;
+    margin-bottom: 5.625rem;
     padding-bottom: 3.75rem;
   }
 }
 @media (min-width: 1200px) {
   .hero {
-    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
     padding-bottom: 6.5rem;
+    height: calc(100vh - 23.125rem);
   }
 }
 
@@ -575,6 +587,21 @@ a {
 @media (min-width: 1200px) {
   .hero__paragraph {
     margin-bottom: 4.125rem;
+  }
+}
+
+.hero__image {
+  width: 100%;
+  margin-top: 3.75rem;
+  border: 2px solid var(--secondary);
+}
+@media (min-width: 1200px) {
+  .hero__image {
+    display: block;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: initial;
   }
 }
 
@@ -621,8 +648,8 @@ a {
   align-items: center;
   width: 100%;
   padding: 1.75rem 1.5rem 1.5rem;
-  background-color: #0f3460;
   border-radius: 10px;
+  border: 4px solid var(--accent);
 }
 
 .skill__svg-icon {
@@ -636,7 +663,8 @@ a {
   margin-top: 5rem;
   padding: 2rem 1rem;
   border-radius: 0.625rem;
-  background-color: #0f3460;
+  background-color: #16213e;
+  border: 4px solid var(--accent);
 }
 @media (min-width: 474px) {
   .project {
@@ -700,7 +728,7 @@ a {
 }
 
 .contact__header {
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .contact__paragraph {

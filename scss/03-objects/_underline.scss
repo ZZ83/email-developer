@@ -1,0 +1,6 @@
+@use '../00-abstracts' as *;
+
+.underline {
+    display: inline-block;
+    border-bottom: 4px solid var(--accent);
+}

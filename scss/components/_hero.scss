@@ -5,11 +5,15 @@
     padding-bottom: rem(80px);
     @include mq(medium) {
         margin-top: rem(90px);
+        margin-bottom: rem(90px);
         padding-bottom: rem(60px);
     }
     @include mq(large) {
-        margin-top: rem(128px);
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(160px);
         padding-bottom: rem(104px);
+        height: calc(100vh - rem(370px));
     }
 }
     .hero__header {
@@ -26,5 +30,17 @@
         }
         @include mq(large) {
             margin-bottom: rem(66px);
+        }
+    }
+    .hero__image {
+        width: 100%;
+        margin-top: rem(60px);
+        border: 2px solid var(--secondary);
+        @include mq(large) {
+            display: block;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            margin-top: initial;
         }
     }

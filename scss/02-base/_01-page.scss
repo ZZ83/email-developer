@@ -1,5 +1,9 @@
 @use '../00-abstracts' as *;
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: var(--primary);
     font-family: 'Space Grotesk', sans-serif;

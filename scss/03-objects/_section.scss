@@ -7,10 +7,6 @@
         padding-top:    rem(100px);
         padding-bottom: rem(100px);
     }
-    @include mq(large) {
-        padding-top:    rem(140px);
-        padding-bottom: rem(140px);
-    } 
 }
 
 .section--bg {

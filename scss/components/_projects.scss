@@ -5,7 +5,8 @@
     margin-top: rem(80px);
     padding: rem(32px) rem(16px);
     border-radius: rem(10px);
-    background-color: #0f3460;
+    background-color: #16213e;
+    border: 4px solid var(--accent);
     @include mq(small) {
         padding: rem(32px) rem(24px);
     }

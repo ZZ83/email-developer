@@ -3,7 +3,7 @@
 .logo {
     width:  rem(40px);
     height: rem(40px);
-    fill: var(--accent);
+    fill: var(--secondary);
     @include mq(small) {
         width:  rem(48px);
         height: rem(48px);
