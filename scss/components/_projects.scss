@@ -6,7 +6,7 @@
     padding: rem(32px) rem(16px);
     border-radius: rem(10px);
     background-color: #16213e;
-    border: 4px solid var(--accent);
+    border: 4px solid var(--secondary);
     @include mq(small) {
         padding: rem(32px) rem(24px);
     }

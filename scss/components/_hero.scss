@@ -35,7 +35,8 @@
     .hero__image {
         width: 100%;
         margin-top: rem(60px);
-        border: 2px solid var(--secondary);
+        border-radius: 10px;
+        border: 4px solid var(--secondary);
         @include mq(large) {
             display: block;
             border-radius: 50%;

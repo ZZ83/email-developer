@@ -1,7 +1,9 @@
 @use '../00-abstracts' as *;
 
 .contact {
-   max-width: rem(700px);
+    max-width: rem(700px);
+    margin-top: 0;
+    padding-bottom: rem(80px);
 }
     .contact__header {
         margin-bottom: rem(32px);
