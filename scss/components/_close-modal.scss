@@ -1,0 +1,33 @@
+@use '../00-abstracts' as *;
+
+.close-modal {
+    position: absolute;
+    top: rem(16px);
+    right: rem(16px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: rem(16px);
+    height: rem(16px);
+}
+    .close-modal__button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: var(--primary);
+        fill: var(--primary);
+        &:hover {
+            color: var(--accent);
+            fill: var(--accent);
+        }
+    }
+    .close-modal__icon {
+        width:  rem(16px);
+        height: rem(16px);
+        margin-right: rem(4px);
+    }

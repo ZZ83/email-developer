@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -369,6 +370,7 @@ html {
 :root {
   --primary: #1a1a2e;
   --secondary: #f1fafb;
+  --tertiary: #16213e;
   --accent: #e94560;
   --hover: #0f3460;
   --fs-400: 1rem;
@@ -478,7 +480,7 @@ a {
 }
 
 .section--bg {
-  background-color: #16213e;
+  background-color: var(--tertiary);
 }
 
 .underline {
@@ -664,7 +666,7 @@ a {
   margin-top: 5rem;
   padding: 2rem 1rem;
   border-radius: 0.625rem;
-  background-color: #16213e;
+  background-color: var(--tertiary);
   border: 4px solid var(--secondary);
 }
 @media (min-width: 474px) {
@@ -687,6 +689,7 @@ a {
 @media (min-width: 1200px) {
   .project__image {
     width: 55%;
+    cursor: pointer;
   }
 }
 
@@ -744,6 +747,140 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  width: 95%;
+  max-width: 56.25rem;
+  height: 100%;
+  margin: 3.5rem auto;
+  padding: 2rem 1rem;
+  background-color: var(--secondary);
+  overflow-y: scroll;
+}
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal__image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 1rem;
+  height: 1rem;
+}
+
+.close-modal__button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--primary);
+  fill: var(--primary);
+}
+.close-modal__button:hover {
+  color: var(--accent);
+  fill: var(--accent);
+}
+
+.close-modal__icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+.switches {
+  display: flex;
+  justify-content: space-between;
+  max-width: 37.5rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+}
+
+.switch__header {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+.switch__input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.switch__input:checked + .switch__background {
+  background: #16a085;
+}
+.switch__input:checked + .switch__background .switch__slider {
+  margin-left: 50%;
+  background: #1abc9c;
+}
+.switch__input:checked + .switch__background .switch__slider::before {
+  content: "✔";
+}
+
+.switch__background {
+  display: flex;
+  align-items: center;
+  width: 3.5rem;
+  height: 1.5rem;
+  background: var(--primary);
+  border-radius: 2.5em;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.switch__slider {
+  display: flex;
+  margin-left: 0.5em;
+  justify-content: center;
+  align-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: red;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.switch__slider:before {
+  content: "×";
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

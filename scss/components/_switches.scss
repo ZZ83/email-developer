@@ -1,0 +1,10 @@
+@use '../00-abstracts' as *;
+
+.switches {
+    display: flex; 
+    justify-content: space-between;
+    max-width: rem(600px);
+    margin: auto;
+    margin-top: rem(40px);
+    margin-bottom: rem(16px);
+}
