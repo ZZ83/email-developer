@@ -3,15 +3,26 @@
 
 .modal {
     position: relative;
-    width: 95%;
+    width: calc(100% - rem(16px));
     max-width: rem(900px);
     height: 100%;
-    margin:  rem(56px) 0;
+    margin:  rem(8px) 0;
     padding: rem(32px) rem(16px);
     background-color: #cfd8dc;
     overflow-y: scroll;
     &::-webkit-scrollbar{
         display: none;
+    }
+    @include mq(x-small) {
+        width: calc(100% - rem(32px));
+        margin:  rem(16px) 0;
+    }
+    @include mq(medium) {
+        margin:  rem(24px) 0;
+        width: calc(100% - rem(64px));
+    }
+    @include mq(large) {
+        margin:  rem(56px) 0;
     }
 }
     .modal__image {
