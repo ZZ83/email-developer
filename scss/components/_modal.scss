@@ -6,9 +6,9 @@
     width: 95%;
     max-width: rem(900px);
     height: 100%;
-    margin:  rem(56px) auto;
+    margin:  rem(56px) 0;
     padding: rem(32px) rem(16px);
-    background-color: var(--secondary);
+    background-color: transparent;
     overflow-y: scroll;
     &::-webkit-scrollbar{
         display: none;
@@ -19,4 +19,5 @@
         width: 100%;
         max-width: 600px;
         margin: 0 auto;
+        transition: max-width 0.5s;
     }

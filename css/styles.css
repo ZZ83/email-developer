@@ -668,6 +668,7 @@ a {
   border-radius: 0.625rem;
   background-color: var(--tertiary);
   border: 4px solid var(--secondary);
+  color: var(--secondary);
 }
 @media (min-width: 474px) {
   .project {
@@ -766,9 +767,9 @@ a {
   width: 95%;
   max-width: 56.25rem;
   height: 100%;
-  margin: 3.5rem auto;
+  margin: 3.5rem 0;
   padding: 2rem 1rem;
-  background-color: var(--secondary);
+  background-color: transparent;
   overflow-y: scroll;
 }
 .modal::-webkit-scrollbar {
@@ -780,6 +781,7 @@ a {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  transition: max-width 0.5s;
 }
 
 .close-modal {
@@ -802,8 +804,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: var(--primary);
-  fill: var(--primary);
+  color: var(--secondary);
+  fill: var(--secondary);
 }
 .close-modal__button:hover {
   color: var(--accent);
@@ -819,7 +821,8 @@ a {
 .switches {
   display: flex;
   justify-content: space-between;
-  max-width: 37.5rem;
+  width: calc(100% - 3rem);
+  max-width: 18.375rem;
   margin: auto;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
@@ -827,12 +830,14 @@ a {
 
 .switch {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  color: var(--secondary);
 }
 
 .switch__header {
-  color: var(--primary);
-  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .switch__input {
@@ -858,7 +863,7 @@ a {
   align-items: center;
   width: 3.5rem;
   height: 1.5rem;
-  background: var(--primary);
+  background: gray;
   border-radius: 2.5em;
   transition: all 0.5s ease;
   cursor: pointer;

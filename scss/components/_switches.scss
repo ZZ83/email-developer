@@ -3,7 +3,8 @@
 .switches {
     display: flex; 
     justify-content: space-between;
-    max-width: rem(600px);
+    width: calc(100% - rem(48px));
+    max-width: rem(294px);
     margin: auto;
     margin-top: rem(40px);
     margin-bottom: rem(16px);
