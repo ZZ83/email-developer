@@ -612,9 +612,16 @@ a {
   padding-bottom: 0.625rem;
   border: none;
   border-bottom: 2px solid var(--accent);
+  background: none;
 }
 .button:hover {
   color: var(--accent);
+}
+
+.button--project {
+  margin-top: 32px;
+  color: var(--secondary);
+  cursor: pointer;
 }
 
 .button--contact {
@@ -686,6 +693,7 @@ a {
   display: block;
   width: 100%;
   border-radius: 8px;
+  background-color: var(--secondary);
 }
 @media (min-width: 1200px) {
   .project__image {
@@ -755,7 +763,7 @@ a {
   height: 100vh;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -769,7 +777,7 @@ a {
   height: 100%;
   margin: 3.5rem 0;
   padding: 2rem 1rem;
-  background-color: transparent;
+  background-color: #cfd8dc;
   overflow-y: scroll;
 }
 .modal::-webkit-scrollbar {

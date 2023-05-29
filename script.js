@@ -1,13 +1,11 @@
+const solace         = document.getElementById('solace');
+const shaggys        = document.getElementById('shaggys');
+const dailySentry    = document.getElementById('daily-sentry');
+const overlay        = document.getElementById('overlay');
+const closeModal     = document.getElementById('close-modal');
 const mobileSwitch   = document.getElementById('check-mobile');
 const darkModeSwitch = document.getElementById('check-dark-mode');
 const modalImage     = document.getElementById('modal-image');
-
-const dailySentry = document.getElementById('daily-sentry');
-const solace      = document.getElementById('solace');
-
-const overlay       = document.getElementById('overlay');
-const closeModal    = document.getElementById('close-modal');
-
 
 const emailSource = {
 	dailySentry: {
@@ -15,6 +13,12 @@ const emailSource = {
 		mobileLight:  "images/daily-sentry/mobile-light.jpg",
 		desktopDark:  "images/daily-sentry/desktop-dark.jpg",
 		desktopLight: "images/daily-sentry/desktop-light.jpg",
+	},
+	shaggys: {
+		mobileDark:   "images/shaggys/mobile-dark.jpg",
+		mobileLight:  "images/shaggys/mobile-light.jpg",
+		desktopDark:  "images/shaggys/desktop-dark.jpg",
+		desktopLight: "images/shaggys/desktop-light.jpg",
 	},
 	solace: {
 		mobileDark:   "images/solace/mobile-dark.jpg",
@@ -34,7 +38,13 @@ const emailSource = {
 			this.paths.mobileLight  = this.dailySentry.mobileLight;
 			this.paths.desktopDark  = this.dailySentry.desktopDark;
 			this.paths.desktopLight = this.dailySentry.desktopLight;
-		} else if (project === "solace") {
+		} else if (project === "shaggys") {
+			this.paths.mobileDark   = this.shaggys.mobileDark;
+			this.paths.mobileLight  = this.shaggys.mobileLight;
+			this.paths.desktopDark  = this.shaggys.desktopDark;
+			this.paths.desktopLight = this.shaggys.desktopLight;
+		}
+		 else if (project === "solace") {
 			this.paths.mobileDark   = this.solace.mobileDark;
 			this.paths.mobileLight  = this.solace.mobileLight;
 			this.paths.desktopDark  = this.solace.desktopDark;
@@ -47,12 +57,18 @@ closeModal.addEventListener('click', function() {
 	overlay.style.display = "none";
 });
 
-
 dailySentry.addEventListener('click', function() {
 	overlay.style.display = "flex";
 	modalImage.src = emailSource.dailySentry.desktopDark;
 	darkModeSwitch.checked = true;
 	emailSource.setImagesPath("daily-sentry");
+});
+
+shaggys.addEventListener('click', function() {
+	overlay.style.display = "flex";
+	modalImage.src = emailSource.shaggys.desktopDark;
+	darkModeSwitch.checked = true;
+	emailSource.setImagesPath("shaggys");
 });
 
 solace.addEventListener('click', function() {

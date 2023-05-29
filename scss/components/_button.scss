@@ -4,9 +4,16 @@
     padding-bottom: rem(10px);
     border: none;
     border-bottom: 2px solid var(--accent);
+    background: none;
     &:hover {
         color: var(--accent);
     }
+}
+
+.button--project {
+    margin-top: 32px;
+    color: var(--secondary);
+    cursor: pointer;
 }
 
 .button--contact {
