@@ -11,7 +11,10 @@
 }
 
 .button--project {
-    margin-top: 32px;
+    margin-top: rem(32px);
+    margin-right: rem(40px);
+    padding-left:  0;
+    padding-right: 0;
     color: var(--secondary);
     cursor: pointer;
 }
