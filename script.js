@@ -6,21 +6,25 @@ const closeModal     = document.getElementById('close-modal');
 const mobileSwitch   = document.getElementById('check-mobile');
 const darkModeSwitch = document.getElementById('check-dark-mode');
 const modalImage     = document.getElementById('modal-image');
+const viewInBrowser  = document.getElementById('view-in-browser');
 
 const emailSource = {
 	dailySentry: {
+		url:          "https://zekelkeys.com/newsletter-email/",
 		mobileDark:   "images/daily-sentry/mobile-dark.jpg",
 		mobileLight:  "images/daily-sentry/mobile-light.jpg",
 		desktopDark:  "images/daily-sentry/desktop-dark.jpg",
 		desktopLight: "images/daily-sentry/desktop-light.jpg",
 	},
 	shaggys: {
+		url:          "https://zekelkeys.com/promotional-email/",
 		mobileDark:   "images/shaggys/mobile-dark.jpg",
 		mobileLight:  "images/shaggys/mobile-light.jpg",
 		desktopDark:  "images/shaggys/desktop-dark.jpg",
 		desktopLight: "images/shaggys/desktop-light.jpg",
 	},
 	solace: {
+		url:          "https://zekelkeys.com/donation-request-email/",
 		mobileDark:   "images/solace/mobile-dark.jpg",
 		mobileLight:  "images/solace/mobile-light.jpg",
 		desktopDark:  "images/solace/desktop-dark.jpg",
@@ -53,29 +57,41 @@ const emailSource = {
 	}
 }
 
+function resetInputs() {
+	mobileSwitch.checked   = false;
+	darkModeSwitch.checked = true;
+}
+
 closeModal.addEventListener('click', function() {
 	overlay.style.display = "none";
+	modalImage.style.maxWidth = "600px";
 });
 
 dailySentry.addEventListener('click', function() {
+	resetInputs();
 	overlay.style.display = "flex";
 	modalImage.src = emailSource.dailySentry.desktopDark;
 	darkModeSwitch.checked = true;
 	emailSource.setImagesPath("daily-sentry");
+	viewInBrowser.href = emailSource.dailySentry.url;
 });
 
 shaggys.addEventListener('click', function() {
+	resetInputs();
 	overlay.style.display = "flex";
 	modalImage.src = emailSource.shaggys.desktopDark;
 	darkModeSwitch.checked = true;
 	emailSource.setImagesPath("shaggys");
+	viewInBrowser.href = emailSource.shaggys.url;
 });
 
 solace.addEventListener('click', function() {
+	resetInputs();
 	overlay.style.display = "flex";
 	modalImage.src = emailSource.solace.desktopDark;
 	darkModeSwitch.checked = true;
 	emailSource.setImagesPath("solace");
+	viewInBrowser.href = emailSource.solace.url;
 });
 
 darkModeSwitch.addEventListener('change', function() {
