@@ -3,28 +3,24 @@
 .skills {
     display: grid;
     gap: rem(32px);
+    grid-template-columns: repeat(2, 1fr);
     padding-top: rem(80px);
     @include mq(medium) {
-        gap: rem(48px);
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, rem(150px));
+        justify-content: space-between;
+        row-gap: rem(80px);
     }
     @include mq(large) {
-        gap: rem(64px);
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, rem(150px));
     } 
 }
     .skill {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: rem(28px) rem(24px) rem(24px);
-        border-radius: 10px;
-        border: 4px solid var(--secondary);
+        text-align: center;
     }
         .skill__svg-icon {
-            width: 75%;
-            margin-bottom: rem(16px);
             fill: var(--secondary);
+            background-color: #f1f1f1;
+            padding: rem(24px);
+            border-radius: 10px;
+            margin-bottom: rem(16px);
         }

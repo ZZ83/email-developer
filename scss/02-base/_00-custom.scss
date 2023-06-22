@@ -11,15 +11,15 @@
     --fs-400: 1rem;
     --fs-500: 1.5rem;
     --fs-550: 1.5rem;
-    --fs-600: 2rem;
+    --fs-600: 1.5rem;
     --fs-700: 2.5rem;
     // Line Height
     --lh-400: 1.625rem;
-    --lh-600: 2rem;
+    --lh-600: 1.5rem;
     --lh-700: 2.5rem;
     //Letter Spacing
     --ls-500: -0.021rem;
-    --ls-600: -0.063rem;
+    --ls-600:  0.025rem;
     --ls-700: -0.071rem;
     @include mq(small) {
         // Font Size
@@ -28,14 +28,11 @@
     @include mq(medium) {
         // Font Size
         --fs-400: 1.125rem;
-        --fs-600: 3rem;
         --fs-700: 4.5rem;
         // Line Height
         --lh-400: 1.75rem;
-        --lh-600: 3rem;
         --lh-700: 4.5rem;
         // Letter Spacing
-        --ls-600: -0.094rem;
         --ls-700: -0.128rem;
     }
     @include mq(large) {
