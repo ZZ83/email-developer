@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <!-- Help character display properly. -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- Set the initial scale of the email. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Force Outlook clients to render with a better MS engine. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <!-- Help prevent blue links and autolinking -->
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+        <!-- Prevent Apple from reformatting and zooming messages. -->
+        <meta name="x-apple-disable-message-reformatting">
+        <!-- Target dark mode -->
+        <meta name="color-scheme"            content="light dark">
+        <meta name="supported-color-schemes" content="light dark only">
+        <!-- The title tag -->
+        <title>Daily Sentry Newsletter</title>
+
+        <!-- Allows for better image rendering on Windows hi-DPI displays. -->
+        <!--[if mso]>
+        <noscript>
+            <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml>
+        </noscript>
+        <![endif]-->
+
+        <!-- To support dark mode meta tags -->
+        <style type="text/css">
+            :root {
+                color-scheme: light dark;
+                supported-color-schemes: light dark;
+            }
+        </style>
+
+        <!-- Web fonts / @font-face -->
+        <style>
+            @media screen {
+                /* latin */
+                @font-face {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* latin */
+                @font-face {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+            }
+        </style>
+
+        <!-- Resets -->
+        <style type="text/css">
+            /** Client-specific styles **/
+            /* Stops email clients resizing small text. */
+            body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+            /* Stops Outlook from adding extra spacing to tables. */
+            table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+            /* Uses a better rendering method when resizing images in Outlook IE. */
+            img { -ms-interpolation-mode: bicubic; }
+            
+            /* General reset styles */
+            *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+            body  { width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; }
+            table { border-collapse: collapse !important; }
+            img   { display: block; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+            h1, h2, h3, p { margin: 0; padding: 0; }
+
+            /* TEST TEST TEST */
+            a { text-decoration: none; }
+
+            /* Centre email on Android 4.4 - margin reset */
+            div[style*="margin:16px 0"] {
+                margin: 0 !important;
+            }
+
+            /* Prevent Apple blue links. */
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size:   inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
+
+            /* Prevent Gmail blue links. */
+            u + .body a {
+                color: inherit;
+                text-decoration: none;
+                font-size:   inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+
+            /* Prevent Samsung blue links. */
+            #MessageViewBody a {
+                color: inherit;
+                text-decoration: none;
+                font-size:   inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+
+            .link:hover { 
+                text-decoration: none !important; 
+            }
+            .body-fix {
+                word-spacing: normal;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+        </style>
+
+        <!-- Mobile styles -->
+        <style>
+            @media screen and (max-width:600px) {
+                .w100p { width: 100% !important; }
+                .imgFull { width: 100% !important; height: auto !important; }
+                .tPad-0  { padding-top:   0 !important; }
+                .rPad-0  { padding-right: 0 !important; }
+            }
+        </style>
+
+        <!-- Dark mode styles -->
+        <style>
+            @media (prefers-color-scheme: dark) {
+                /* Shows Dark Mode-Only Content, Like Images */
+                .dark-img {
+                    display: block !important;
+                    width: auto !important;
+                    overflow: visible !important;
+                    float: none !important;
+                    max-height: inherit !important;
+                    max-width:  inherit !important;
+                    line-height: auto !important;
+                    margin-top: 0px !important;
+                    visibility: inherit !important;
+                }
+
+                /* Custom Dark Mode Background Header Color */
+                .darkmode-btn { background-color: #EDF2F4 !important; color: #17192E !important;}
+
+                /* Hides Light Mode-Only Content, Like Images */
+                .light-img { display: none; display: none !important; }
+
+                /* Custom Dark Mode Background Color */
+                .darkmode  { background-color: #03051A !important; }
+                .darkmode2 { background-color: #17192E !important; }
+                .darkmode3 { background-color: #2B2D42 !important; }
+
+                /* Custom Dark Mode Font Colors */
+                h1, h2, h3, p, img { color: #EDF2F4 !important; }
+            }
+
+            /* Copy dark mode styles for android support */
+            /* Shows Dark Mode-Only Content, Like Images */
+            [data-ogsc] .dark-img {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+                float: none !important;
+                max-height: inherit !important;
+                max-width: inherit !important;
+                line-height: auto !important;
+                margin-top: 0px !important;
+                visibility: inherit !important;
+            }
+
+            /* Hides Light Mode-Only Content, Like Images */
+            [data-ogsc] .light-img {
+                display: none;
+                display: none !important;
+            }
+
+            /* Custom Dark Mode Background Color */
+            [data-ogsc] .darkmode  { background-color: #100E11 !important; }
+            [data-ogsc] .darkmode2 { background-color: #020203 !important; }
+            [data-ogsc] .darkmode3 { background-color: #222023 !important; }
+
+            /* Custom Dark Mode Font Colors */
+            [data-ogsc] h1, [data-ogsc] h3, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a { color: #EDF2F4!important; }
+            [data-ogsc] .white { color: #EDF2F4 !important; }
+
+            /* Custom Dark Mode Text Link Color */
+            [data-ogsc] .footer a.link { color: #EDF2F4 !important; }
+        </style>
+
+        <!-- Correct superscripts in Outlook -->
+        <!--[if (gte mso 9)|(IE)]>
+        <style>
+            body, table, td, h1, h2, h3, p, a, span {font-family: sans-serif, Arial, Helvetica !important;}
+            sup{font-size:100% !important;}
+            a {text-decoration: none;}
+        </style>
+        <![endif]-->
+    </head>
+    <body class="darkmode body body-fix" style="font-family: 'Inter'">
+        <div role="article" aria-roledescription="email" aria-label="Email from Wonderblum" xml:lang="en" lang="en" style="font-family: 'Inter'">
+            <!--hidden preheader with preh-header spacer hack-->
+            <div class="litmus-builder-preview-text" style="display:none;">
+                &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+            </div>
+            <table class="darkmode" role="presentation" cellpadding="0" cellspacing="0" border="0"  style="width:100%; background: #cfdce2;">
+                <!-- MAIN CONTENT -->
+                <tr>
+                    <td class="tPad-0" align="center" valign="top" style="padding: 32px 0;">
+                        <table class="w100p darkmode2" role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:600px; background-color: #ffffff;">   
+                            <!-- START of HEADER -->
+                            <tr>
+                                <td align="left" height="88px" style="width: 552px; height: 88px; padding: 0 24px;">
+                                    <a class="light-img"  href="http://example.com" target="_blank" style="display: inline-block;">
+                                        <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/884ec297-f225-9ab2-b0d4-a4ae1d9da161.png" width="186" alt="Daily Sentry Logo">
+                                    </a>
+                                    <a class="dark-img" href="http://example.com" target="_blank" style="display: none;">
+                                        <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/61d7f6b4-b16b-88ec-aeb3-edd5550b0162.png" width="186" alt="Daily Sentry Logo">
+                                    </a>
+                                </td>
+                            </tr>
+                            <!-- END of HEADER -->
+
+                            <!-- START of MAIN ARTICLE -->
+                            <tr>
+                                <td align="center" style="padding: 0 24px">
+                                    <img width="552"  src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/40a2f024-bc72-4c45-b4c4-5c43ae49f920.jpg" alt="Jon Bernthal as Frank Castle AKA The Punisher" style="vertical-align: middle; width: 100%; max-width: 552px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 552px; padding: 16px 24px 48px 24px;">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                        <tr>
+                                            <td>
+                                                <span  style="margin: 0; padding: 0; font-size: 16px; line-height: 24px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 3px; color: #D90429;">ENTERTAINMENT</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 0;">
+                                                <h1 style="margin: 0; padding: 0; font-size: 28px; line-height: 40px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; color: #2B2D42;">The Punisher Season 3: Will we see another season?</h1>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-bottom: 24px">
+                                                <p  style="margin: 0; padding: 0; font-size: 18px; line-height: 32px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; color: #2B2D42;"">There has still been no news of a third season of The Punisher, despite rumour's of it being unveiled at the D23 expo that happened earlier this year.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div>
+                                                    <!--[if mso]>
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle; width:552px;" arcsize="0%" stroke="f" fillcolor="#2B2D42">
+                                                            <w:anchorlock/>
+                                                            <center>
+                                                    <![endif]-->
+                                                            <a class="darkmode-btn" href="https://www.videogamer.com/news/the-punisher-season-3-predicted-release-date-leaks/" target="_blank" style="font-size: 16px; line-height:56px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; letter-spacing: 2px; color:#EDF2F4; background-color: #2B2D42; display: inline-block; text-align:center; text-decoration:none; width: 100%;-webkit-text-size-adjust:none;">READ MORE</a>
+                                                    <!--[if mso]>
+                                                            </center>
+                                                        </v:roundrect>
+                                                    <![endif]-->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of MAIN ARTICLE -->
+
+                            <!-- START of FEATURED ARTICLES HEADER -->
+                            <tr>
+                                <td class="darkmode3"  style="background-color: #EDF2F4; padding: 24px;">
+                                    <h2 style="margin: 0; padding: 0;font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 24px; line-height: 32px; color:#2B2D42;">Featured Articles</h2>
+                                </td>
+                            </tr>
+                            <!-- END of FEATURED ARTICLES HEADER -->
+
+                            <!-- START of TWO COLUMN LAYOUT -->
+                            <tr>
+                                <td class="darkmode3" align="center" valign="top" style="padding: 0 24px 0; background-color: #EDF2F4">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                        <tr>
+                                            <td align="center" valign="top" style="font-size:0;">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                <tr>
+                                                <td valign="top" style="width: 264px;">
+                                            <![endif]-->
+                                                <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 24px;">
+                                                    <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 264px;">
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/a76b615a-8296-03dd-b6dc-bf2e8e7e5019.jpg" alt="2022 Toyota Tacoma" width="264" style="font-size: 16px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-top: 16px;">
+                                                                <span  style="margin: 0; padding: 0; font-size: 12px; line-height: 16px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 3px; color: #D90429;">AUTOMOTIVE</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding: 8px 0;">
+                                                                <!--H3 heading-->
+                                                                <h3 style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#2B2D42; margin:0; padding:0; text-align: left;">Toyota Tacoma trounced the midsize truck competition in 2022 </h3>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding-bottom: 24px;">
+                                                                <!--Paragraph-->
+                                                                <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">The Toyota Tacoma was the best-selling midsize truck in the U.S. last year with a bullet, despite having last been refreshed in 2016. Toyota delivered 237,323 Tacoma trucks...</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-bottom: 48px">
+                                                                <div>
+                                                                    <!--[if mso]>
+                                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle; width:264px;" arcsize="0%" stroke="f" fillcolor="#2B2D42">
+                                                                            <w:anchorlock/>
+                                                                            <center>
+                                                                    <![endif]-->
+                                                                            <a class="darkmode-btn" href="https://www.foxnews.com/auto/toyota-tacoma-trounced-midsize-truck-2022" target="_blank" style="font-size: 16px; line-height:56px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; letter-spacing: 2px; color:#EDF2F4; background-color: #2B2D42; display: inline-block; text-align:center; text-decoration:none; width: 100%;-webkit-text-size-adjust:none;">READ MORE</a>
+                                                                    <!--[if mso]>
+                                                                            </center>
+                                                                        </v:roundrect>
+                                                                    <![endif]-->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                <td valign="top" style="width:24px;"></td>
+                                                <td valign="top" style="width:264px;">
+                                            <![endif]-->
+                                                <div style="display:inline-block;vertical-align:top;">
+                                                    <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 264px;">
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/f6c5f6a7-40ad-84d4-b324-83ed64cc34b7.jpg" alt="Woman sitting on motorcycle with her German Shepherd" width="264" style="font-size: 16px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-top: 16px;">
+                                                                <span  style="margin: 0; padding: 0; font-size: 12px; line-height: 16px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 3px; color: #D90429;">TRAVEL</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding: 8px 0;">
+                                                                <!--H3 heading-->
+                                                                <h3 style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#2B2D42; margin:0; padding:0; text-align: left;">This woman is riding around the world with her German shepherd</h3>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding-bottom: 24px;">
+                                                                <!--Paragraph-->
+                                                                <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">It isn't every day that you spot a motorcyclist riding along the road with a German shepherd dog on the back of their bike. So it's not surprising that the sight of content...</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-bottom: 48px">
+                                                                <div>
+                                                                    <!--[if mso]>
+                                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle; width:264px;" arcsize="0%" stroke="f" fillcolor="#2B2D42">
+                                                                            <w:anchorlock/>
+                                                                            <center>
+                                                                    <![endif]-->
+                                                                            <a class="darkmode-btn" href="https://www.cnn.com/travel/article/jess-stone-german-shepherd-dog-motorcycle/index.html" target="_blank" style="font-size: 16px; line-height:56px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; letter-spacing: 2px; color:#EDF2F4; background-color: #2B2D42; display: inline-block; text-align:center; text-decoration:none; width: 100%;-webkit-text-size-adjust:none;">READ MORE</a>
+                                                                    <!--[if mso]>
+                                                                            </center>
+                                                                        </v:roundrect>
+                                                                    <![endif]-->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                            <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of TWO COLUMN LAYOUT -->
+
+                            <!-- START of TWO COLUMN LAYOUT -->
+                            <tr>
+                                <td class="darkmode3" align="center" valign="top" style="padding: 0 24px 0; background-color: #EDF2F4">
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                        <tr>
+                                            <td align="center" valign="top" style="font-size:0;">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                <tr>
+                                                <td valign="top" style="width: 264px;">
+                                            <![endif]-->
+                                                <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 24px;">
+                                                    <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 264px;">
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/a680feaa-a51c-285c-e736-b9c706d65f63.jpg" alt="Forspoken main character Alfre Frey Holland" width="264" style="font-size: 16px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-top: 16px;">
+                                                                <span  style="margin: 0; padding: 0; font-size: 12px; line-height: 16px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 3px; color: #D90429;">VIDEOGAMES</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding: 8px 0;">
+                                                                <!--H3 heading-->
+                                                                <h3 style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#2B2D42; margin:0; padding:0; text-align: left;">Forspoken's PC requirements are out and actually kinda weird</h3>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding-bottom: 24px;">
+                                                                <!--Paragraph-->
+                                                                <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">The full PC system requirement for Forspoken, Square Enix's next big action-RPG, have been released. The minimum requirements are mercifully modest, if occasionally nonsensical...</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-bottom: 48px">
+                                                                <div>
+                                                                    <!--[if mso]>
+                                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle; width:264px;" arcsize="0%" stroke="f" fillcolor="#2B2D42">
+                                                                            <w:anchorlock/>
+                                                                            <center>
+                                                                    <![endif]-->
+                                                                            <a class="darkmode-btn" href="https://www.pcgamer.com/forspokens-pc-requirements-are-out-and-actually-kinda-weird/" target="_blank" style="font-size: 16px; line-height:56px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; letter-spacing: 2px; color:#EDF2F4; background-color: #2B2D42; display: inline-block; text-align:center; text-decoration:none; width: 100%;-webkit-text-size-adjust:none;">READ MORE</a>
+                                                                    <!--[if mso]>
+                                                                            </center>
+                                                                        </v:roundrect>
+                                                                    <![endif]-->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                <td valign="top" style="width:24px;"></td>
+                                                <td valign="top" style="width:264px;">
+                                            <![endif]-->
+                                                <div style="display:inline-block;vertical-align:top;">
+                                                    <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 264px;">
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/1c75ecc0-24f2-0804-a661-4b3004efcc19.jpg" alt="NBA player Matt Ryan staring at basket from free throw line" width="264" style="font-size: 16px;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-top: 16px;">
+                                                                <span  style="margin: 0; padding: 0; font-size: 12px; line-height: 16px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 3px; color: #D90429;">SPORTS</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding: 8px 0;">
+                                                                <!--H3 heading-->
+                                                                <h3 style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#2B2D42; margin:0; padding:0; text-align: left;">Who is Matt Ryan, the DoorDash driver turned Lakers sharpshooter?</h3>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding-bottom: 24px;">
+                                                                <!--Paragraph-->
+                                                                <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">The Los Angeles Lakers were staring a 1-6 start in the face Wednesday as they trailed the New Orleans Pelicans 111-108 with just 1.3 seconds remaining on the clock. Whom...</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-bottom: 48px">
+                                                                <div>
+                                                                    <!--[if mso]>
+                                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle; width:264px;" arcsize="0%" stroke="f" fillcolor="#2B2D42">
+                                                                            <w:anchorlock/>
+                                                                            <center>
+                                                                    <![endif]-->
+                                                                            <a class="darkmode-btn" href="https://www.cbssports.com/nba/news/who-is-matt-ryan-the-doordash-driver-turned-lakers-sharpshooter/" target="_blank" style="font-size: 16px; line-height:56px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; letter-spacing: 2px; color:#EDF2F4; background-color: #2B2D42; display: inline-block; text-align:center; text-decoration:none; width: 100%;-webkit-text-size-adjust:none;">READ MORE</a>
+                                                                    <!--[if mso]>
+                                                                            </center>
+                                                                        </v:roundrect>
+                                                                    <![endif]-->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                            <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of TWO COLUMN LAYOUT -->
+
+                            <!-- START of FEATURED MORE HEADER -->
+                            <tr>
+                                <td class="darkmode2"  style="background-color: #ffffff; padding: 24px;">
+                                    <h2 style="margin: 0; padding: 0;font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 24px; line-height: 32px; color:#2B2D42;">More you may like</h2>
+                                </td>
+                            </tr>
+                            <!-- END of FEATURED MORE HEADER -->
+
+
+                            <!-- START of TWO COLUMN LAYOUT -->
+                            <tr>
+                                <td align="center" valign="top" style="padding: 0 24px 48px;">
+                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                          <tr>
+                                               <td align="center" valign="top" style="font-size:0;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                    <tr>
+                                                    <td valign="top" style="width: 264px;">
+                                                <![endif]-->
+                                                    <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 24px;">
+                                                         <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width: 264px;">
+                                                              <tr>
+                                                                   <td align="center" valign="top">
+                                                                        <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/48855f45-9efe-a3b9-a0af-7872ced5a084.jpg" alt="Snowy owl perched on roof" width="264" height="264" style="font-size: 16px;">
+                                                                   </td>
+                                                              </tr>
+                                                         </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" style="width:24px;"></td>
+                                                    <td valign="top" style="width:264px;">
+                                                <![endif]-->
+                                                    <div style="display:inline-block;vertical-align:top;">
+                                                         <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width:264px;">
+                                                            <tr>
+                                                                <td style="padding-top: 16px;">
+                                                                    <span  style="margin: 0; padding: 0; font-size: 12px; line-height: 16px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 3px; color: #D90429;">ANIMALS</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding: 8px 0;">
+                                                                    <!--H3 heading-->
+                                                                    <h3 style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#2B2D42; margin:0; padding:0; text-align: left;">Rare Snowy Owl Shows Up in California–First in 100 Years</h3>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top">
+                                                                    <!--Paragraph-->
+                                                                    <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">She stood among rows of birdwatchers and photographers who flocked to a California...</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top: 8px;">
+                                                                    <a href="https://www.goodnewsnetwork.org/crowd-gathers-for-rare-treat-of-seeing-snowy-owl-in-california/" target="_blank" style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color:#D90429; margin:0; padding:0; text-align: left; text-decoration: underline;">Read More</a>
+                                                                </td>
+                                                            </tr>
+                                                         </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    </tr>
+                                                    </table>
+                                                <![endif]-->
+                                               </td>
+                                          </tr>
+                                     </table>
+                                </td>
+                            </tr>
+                            <!-- END of TWO COLUMN LAYOUT -->
+
+                            <!-- START of REVERSE TWO COLUMN LAYOUT -->
+                            <tr>
+                                <td align="left" style="padding: 0 24px 48px;">
+                                    <!--[if mso]>
+                                    <table dir="rtl" style="width:600px" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td dir="ltr" style="width:264px" valign="top">
+                                    <![endif]-->
+                                    <table cellpadding="0" cellspacing="0" class="w100p" align="right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right">
+                                        <tr>
+                                            <td align="left" style="padding:0;Margin:0;width:264px">
+                                                
+                                                <img class="imgFull"  src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/0b314cfa-31b8-0058-ab12-e6c49a5b393a.jpg" alt="The Mediterranean" style="width: 100%;  display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;font-size:12px" width="298" title="The Mediterranean">
+                                                 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                            </td>
+                                            <td dir="ltr" style="width:264px" valign="top">
+                                    <![endif]-->
+                                    <table cellpadding="0" cellspacing="0" class="w100p" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left">
+                                        <tr>
+                                            <td align="left" style="padding:0;Margin:0;width:264px;">
+                                                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                    <tr>
+                                                        <td style="padding-top: 16px;">
+                                                            <span  style="margin: 0; padding: 0; font-size: 12px; line-height: 16px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 3px; color: #D90429;">MONEY</span>
+                                                        </td>
+                                                    </tr>
+                                                  <tr>
+                                                       <td align="left" valign="top" style="padding: 8px 0;">
+                                                            <!--H3 heading-->
+                                                            <h3 style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#2B2D42; margin:0; padding:0; text-align: left;">Aussie falters on soft jobs data, kiwi calm after Ardern resignation</h3>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td align="left" valign="top">
+                                                            <!--Paragraph-->
+                                                            <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">The Australian dollar reversed a recent rally on Thursday, as rising fears of a U.S. recession and...</p>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="padding-top: 8px;">
+                                                        <a href="https://www.msn.com/en-us/money/markets/aussie-falters-on-soft-jobs-data-kiwi-calm-after-ardern-resignation/ar-AA16vl5v?cvid=f8d189244b0440a5b4d552012ccb69cd" target="_blank" style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color:#D90429; margin:0; padding:0; text-align: left; text-decoration: underline;">Read More</a>
+                                                    </td>
+                                                </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <!-- END of REVERSE TWO COLUMN LAYOUT -->
+
+                            <!-- START of TWO COLUMN LAYOUT -->
+                            <tr>
+                                <td align="center" valign="top" style="padding: 0 24px 48px;">
+                                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                          <tr>
+                                               <td align="center" valign="top" style="font-size:0;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                    <tr>
+                                                    <td valign="top" style="width: 264px;">
+                                                <![endif]-->
+                                                    <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 24px;">
+                                                         <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width: 264px;">
+                                                              <tr>
+                                                                   <td align="center" valign="top">
+                                                                        <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/5bf03966-9e4e-1ad1-1a19-815123beec40.jpg" alt="Destny 2 titan, warlock, and hunter posing" width="264" height="264" style="font-size: 16px; line-height: 24px; color: #0a080b;">
+                                                                   </td>
+                                                              </tr>
+                                                         </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" style="width:24px;"></td>
+                                                    <td valign="top" style="width:264px;">
+                                                <![endif]-->
+                                                    <div style="display:inline-block;vertical-align:top;">
+                                                         <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width:264px;">
+                                                            <tr>
+                                                                <td style="padding-top: 16px;">
+                                                                    <span  style="margin: 0; padding: 0; font-size: 12px; line-height: 16px; font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: 3px; color: #D90429;">VIDEOGAMES</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding: 8px 0;">
+                                                                    <!--H3 heading-->
+                                                                    <h3 style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#2B2D42; margin:0; padding:0; text-align: left;">Bungie Launches New Destiny 2 Community Manager Account</h3>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" valign="top">
+                                                                    <!--Paragraph-->
+                                                                    <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">Bungie launches new social media accounts dedicated to directly communicating with and gathe...</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top: 8px;">
+                                                                    <a href="https://gamerant.com/bungie-destiny-2-community-manager-account-twitter/" target="_blank" style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; color:#D90429; margin:0; padding:0; text-align: left; text-decoration: underline;">Read More</a>
+                                                                </td>
+                                                            </tr>
+                                                         </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    </tr>
+                                                    </table>
+                                                <![endif]-->
+                                               </td>
+                                          </tr>
+                                     </table>
+                                </td>
+                            </tr>
+                            <!-- END of TWO COLUMN LAYOUT -->
+
+                            <!-- START of FOOTER -->
+                            <tr>
+                                <td class="darkmode3" style="padding: 16px 24px 24px; background-color: #EDF2F4;">
+                                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" dir="ltr" style="width:100%;">
+                                        <tr>
+                                            <td align="left">
+                                                <a class="light-img"  href="http://example.com" target="_blank" style="display: inline-block;">
+                                                    <img src="https://i.ibb.co/52n4Zmp/f-logo-light.png" width="140" alt="Daily Sentry Logo">
+                                                </a>
+                                                <a class="dark-img" href="http://example.com" target="_blank" style="display: none;">
+                                                    <img src="https://i.ibb.co/sP0NHNf/f-logo-dark.png" width="140" alt="Daily Sentry Logo">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" style="padding: 8px 0;">
+                                                <!--Paragraph-->
+                                                <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">You received this email because you are signed up to our news letter. You can click the link below if you no longer wish to receive our emails.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">
+                                                <p style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color:#2B2D42;">
+                                                    <a href="https://example.com" target="_blank" style="font-family:'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; color:#D90429; margin:0; padding:0; text-align: left; text-decoration: underline;">Unsubscribe</a> | 1342 W Bash Ave, Nashville, TN 37011
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of FOOTER -->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

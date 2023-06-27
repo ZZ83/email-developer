@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <!--Help character display properly.-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!--Set the initial scale of the email.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Force Outlook clients to render with a better MS engine.-->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <!--Help prevent blue links and autolinking-->
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+        <!--prevent Apple from reformatting and zooming messages.-->
+        <meta name="x-apple-disable-message-reformatting">
+
+        <!--target dark mode-->
+        <meta name="color-scheme"            content="light dark">
+        <meta name="supported-color-schemes" content="light dark only">
+
+        <!-- Allows for better image rendering on Windows hi-DPI displays. -->
+        <!--[if mso]>
+        <noscript>
+            <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml>
+        </noscript>
+        <![endif]-->
+
+        <!--to support dark mode meta tags-->
+        <style type="text/css">
+            :root {
+                color-scheme: light dark;
+                supported-color-schemes: light dark;
+            }
+        </style>
+        <style>
+            @media screen {
+                /* cyrillic-ext */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GoU9vyww.woff2) format('woff2');
+                    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                }
+                /* cyrillic */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GhU9vyww.woff2) format('woff2');
+                    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                }
+                /* vietnamese */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GqU9vyww.woff2) format('woff2');
+                    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                }
+                /* latin-ext */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GrU9vyww.woff2) format('woff2');
+                    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                }
+                /* latin */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GlU9s.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* cyrillic-ext */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GoU9vyww.woff2) format('woff2');
+                    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+                }
+                /* cyrillic */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GhU9vyww.woff2) format('woff2');
+                    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+                }
+                /* vietnamese */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GqU9vyww.woff2) format('woff2');
+                    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+                }
+                /* latin-ext */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GrU9vyww.woff2) format('woff2');
+                    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+                }
+                /* latin */
+                @font-face {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdH35WCmI96Ajtm81GlU9s.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+            }
+        </style>
+        <style type="text/css">
+            .body-fix {
+                width:  100% !important;
+                height: 100% !important;
+                padding: 0 !important;
+                margin:  0 auto !important;
+                word-spacing: normal;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            div[style*="margin:16px 0"] {
+                margin: 0 !important;
+            }
+            table, td {
+                border-collapse: collapse !important;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
+            img {
+                border: 0;
+                line-height: 100%;
+                outline: none;
+                text-decoration: none;
+                display: block;
+            }
+            p, h1, h2, h3 {
+                padding: 0;
+                margin: 0;
+            }
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size:   inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
+            u+#body a {
+                color: inherit;
+                text-decoration: none;
+                font-size:   inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+            #MessageViewBody a {
+                color: inherit;
+                text-decoration: none;
+                font-size: inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+            .link:hover { 
+                text-decoration: none !important; 
+            }
+            .fadeimg {
+                transition: 0.3s !important;
+                opacity: 1 !important;
+            }
+            .fadeimg:hover {
+                transition: 0.3s !important;
+                opacity: 0.5 !important;
+            }
+            .mobile { 
+                display: none; 
+            }
+        </style>
+        <!--mobile styles-->
+        <style>
+            @media screen and (max-width:600px) {
+                .w90p  { width: 90%  !important; }
+                .w95p  { width: 95%  !important; }
+                .w100p { width: 100% !important; }
+
+                .imgFull { width: 100% !important; height: auto !important; }
+
+                .desktop { width: 0 !important; display: none !important; }
+                .mobile { display: block !important; }
+
+                .std { font-size: 18px !important; line-height: 28px !important; }
+
+                .cTxt { text-align: center !important; }
+
+                .tPad-16   { padding-top:   16px !important; }
+
+                .tPad-0   { padding-top:   0 !important; }
+                .lPad-0   { padding-left:  0 !important; }
+                .rPad-0   { padding-right: 0 !important; }
+                .lrPad-24  { padding: 0 24px  !important; }
+                .bPad-30  { padding-bottom: 30px !important; }
+
+                .star a { font-size: 40px !important; }
+            }
+        </style>
+        <!--dark mode styles-->
+        <style>
+            @media (prefers-color-scheme: dark) {
+                /* Shows Dark Mode-Only Content, Like Images */
+                .dark-img {
+                    display: block !important;
+                    width: auto !important;
+                    overflow: visible !important;
+                    float: none !important;
+                    max-height: inherit !important;
+                    max-width: inherit !important;
+                    line-height: auto !important;
+                    margin-top: 0px !important;
+                    visibility: inherit !important;
+                }
+
+                /* Custom Dark Mode Background Header Color */
+                .darkmode-btn { background-color: #EDF2F4 !important; color: #17192E !important;}
+
+                /* Hides Light Mode-Only Content, Like Images */
+                .light-img { display: none; display: none !important; }
+
+                /* Custom Dark Mode Background Color */
+                .darkmode  { background-color: #1A120B !important; }
+                .darkmode2 { background-color: #361500 !important; }
+                .darkmode3 { background-color: #3C2317 !important; }
+
+                /* Custom Dark Mode Font Colors */
+                h1, h2, h3, p, img { color: #F5EEE8 !important; }
+
+                /* Custom Dark Mode Text Link Color */
+                .link { color: #028383 !important; }
+                /* .footer a.link { color: #fdfdfd !important; } */
+            }
+
+            /* Copy dark mode styles for android support */
+            /* Shows Dark Mode-Only Content, Like Images */
+            [data-ogsc] .dark-img {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+                float: none !important;
+                max-height: inherit !important;
+                max-width: inherit !important;
+                line-height: auto !important;
+                margin-top: 0px !important;
+                visibility: inherit !important;
+            }
+
+            /* Hides Light Mode-Only Content, Like Images */
+            [data-ogsc] .light-img {
+                display: none;
+                display: none !important;
+            }
+
+            /* Custom Dark Mode Background Color */
+            [data-ogsc] .darkmode  { background-color: #1A120B !important; }
+            [data-ogsc] .darkmode2 { background-color: #361500 !important; }
+            [data-ogsc] .darkmode3 { background-color: #3C2317 !important; }
+
+            /* Custom Dark Mode Font Colors */
+            [data-ogsc] h1, [data-ogsc] h3, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a { color: #fdfdfd !important; }
+            [data-ogsc] h2, [data-ogsc] h2 a { color: #028383 !important; }
+            [data-ogsc] .white { color: #fdfdfd !important; }
+
+            /* Custom Dark Mode Text Link Color */
+            [data-ogsc] .link { color: #028383 !important; }
+            [data-ogsc] .footer a.link { color: #fdfdfd !important; }
+        </style>
+
+        <!--correct superscripts in Outlook-->
+        <!--[if (gte mso 9)|(IE)]>
+        <style>
+            body, table, td, h1, h2, h3, p, a, span {font-family: sans-serif, Arial, Helvetica !important;}
+            sup{font-size:100% !important;}
+            a {text-decoration: none;}
+        </style>
+        <![endif]-->
+        <title>Promotional Email</title>
+    </head>
+    <body id="body" class="darkmode body body-fix" style="font-family: 'Inter'">
+        <div role="article" aria-roledescription="email" aria-label="Email from Wonderblum" xml:lang="en" lang="en" style="font-family: 'Inter'">
+            <!--hidden preheader with preh-header spacer hack-->
+            <div class="litmus-builder-preview-text" style="display:none;">
+                &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+            </div>
+            <table class="darkmode" role="presentation" cellpadding="0" cellspacing="0" border="0"  style="width:100%; background: #FFF;">
+                <!-- MAIN CONTENT -->
+                <tr>
+                    <td class="tPad-0" align="center" valign="top" style="padding: 32px 0;">
+                        <table class="w100p darkmode2" role="presentation" cellpadding="0" cellspacing="0" border="0" style="width:600px; background-color: #FBF8F5;">   
+                            <tr>
+                                <td class="lrPad-24">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                                        <tr>
+                                            <td>
+                                                <!-- START of HEADER -->
+                                                <tr>
+                                                    <td align="center" height="80px" style="width: 552px; height: 80px; padding: 0 24px;">
+                                                        <a class="light-img"  href="http://example.com" target="_blank" style="display: inline-block;">
+                                                            <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/1e263fce-8fe6-8c3a-0780-e00b926c1253.png" width="125" alt="Shaggy Logo">
+                                                        </a>
+                                                        <a class="dark-img" href="http://example.com" target="_blank" style="display: none;">
+                                                            <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/3fb3c61c-7207-7572-601c-2b568aebdbbf.png" width="125" alt="Shaggy Logo">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <!-- END of HEADER -->
+
+                                                <!-- START OF HERO CTA BUTTON -->
+                                                <tr>
+                                                    <td class="darkmode2" align="center"  style="background-color: #FBF8F5; padding-top: 8px;">
+                                                        <h1 style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 32px; line-height: 32px; color:#1A120B;">Hello Matthew</h1>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="darkmode2" align="center"  style="background-color: #FBF8F5; padding: 24px;">
+                                                        <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; line-height: 24px; color:#1A120B;">Are you ready for the holidays? We know we are. To help get you into the spirit, we’re offering a special promotional offer. For a limited time only, we’re offering 25% off all beardbrand products.</p>
+                                                    </td>
+                                                </tr>
+                                                <!-- END OF HERO CTA BUTTON -->
+
+                                                <!-- START OF CTA BUTTON -->
+                                                <tr>
+                                                    <td align="center" style="padding: 0;">
+                                                        <!--[if mso]>
+                                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle;width:184px;" arcsize="0%" stroke="f" fillcolor="#1A120B">
+                                                                <w:anchorlock/>
+                                                                <center>
+                                                            <![endif]-->
+                                                                <a href="https://example.com" target="_blank" style="background-color:#1A120B; color: #F5EEE8;display:inline-block; font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px;font-weight:400;line-height:56px;text-align:center;text-decoration:none;width: 184px;-webkit-text-size-adjust:none;">shop beardbrand</a>
+                                                            <!--[if mso]>
+                                                                </center>
+                                                                </v:roundrect>
+                                                        <![endif]-->
+                                                    </td>
+                                                </tr>
+                                                <!-- END OF CTA BUTTON -->
+
+                                                <!-- START OF SPACER -->
+                                                <tr>
+                                                    <td class="darkmode2" height="16px" style="background-color: #FBF8F5; height: 16px; line-height: 16px;"></td>
+                                                </tr>
+                                                <!-- END OF SPACER -->
+
+                                                <!-- START of TWO COLUMN LAYOUT -->
+                                                <tr>
+                                                    <td align="center" valign="top" style="padding:  0;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                            <tr>
+                                                                <td align="center" valign="top" style="font-size:0">
+                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                                        <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                                        <tr>
+                                                                        <td valign="top" style="width: 288px;">
+                                                                    <![endif]-->
+                                                                    <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 32px;">
+                                                                        <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 288px;">
+
+                                                                            <!-- START OF SPACER -->
+                                                                            <tr>
+                                                                                <td class="darkmode2" height="32px" style="background-color: #FBF8F5; height: 32px; line-height: 32px;"></td>
+                                                                            </tr>
+                                                                            <!-- END OF SPACER -->
+
+                                                                            <!-- START OF SECTION 1 -->
+                                                                            <tr>
+                                                                                <td class="darkmode3"  style="background-color: #F5EEE8;">
+                                                                                    <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 288px;">
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/527020b8-e65c-4bdf-1793-42115a97a7c0.jpg" alt="2022 Toyota Tacoma" width="288" style="font-size: 16px;">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top" style="padding: 32px 0 8px 0;">
+                                                                                                <h2 style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#1A120B;">UTILITY WASH</h2>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#1A120B;">BEARD WASH / HAIR SHAMPOO</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top" style="padding-bottom: 16px;">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#1A120B;">FACE WASH / BODY WASH</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <!-- START OF CTA BUTTON -->
+                                                                                        <tr>
+                                                                                            <td align="center" style="padding-bottom: 32px;">
+                                                                                                <!--[if mso]>
+                                                                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle;width:184px;" arcsize="0%" stroke="f" fillcolor="#1A120B">
+                                                                                                        <w:anchorlock/>
+                                                                                                        <center>
+                                                                                                    <![endif]-->
+                                                                                                        <a href="https://example.com" target="_blank" style="background-color:#1A120B; color: #F5EEE8;display:inline-block; font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px;font-weight:400;line-height:56px;text-align:center;text-decoration:none;width: 184px;-webkit-text-size-adjust:none;">shop now</a>
+                                                                                                    <!--[if mso]>
+                                                                                                        </center>
+                                                                                                        </v:roundrect>
+                                                                                                <![endif]-->
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <!-- END OF CTA BUTTON -->
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <!-- END OF SECTION 1 -->
+
+                                                                            <!-- START OF SPACER -->
+                                                                            <tr>
+                                                                                <td class="darkmode2" height="32px" style="background-color: #FBF8F5; height: 32px; line-height: 32px;"></td>
+                                                                            </tr>
+                                                                            <!-- END OF SPACER -->
+
+                                                                            <!-- START OF SECTION 2 -->
+                                                                            <tr>
+                                                                                <td class="darkmode3"  style="background-color: #F5EEE8;">
+                                                                                    <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 288px;">
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/45b78f39-6c6a-ec58-a618-37826d9a3180.jpg" alt="2022 Toyota Tacoma" width="288" style="font-size: 16px;">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top" style="padding: 32px 0 8px 0;">
+                                                                                                <h2 style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#1A120B;">UTILITY BAR</h2>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#1A120B;">SOAP PUCK</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#1A120B;">BEARD WASH / FACE WASH</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top" style="padding-bottom: 16px;">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#1A120B;">SHAMPOO BAR / SHAVE SOAP</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <!-- START OF CTA BUTTON -->
+                                                                                        <tr>
+                                                                                            <td align="center" style="padding-bottom: 32px;">
+                                                                                                <!--[if mso]>
+                                                                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle;width:184px;" arcsize="0%" stroke="f" fillcolor="#1A120B">
+                                                                                                        <w:anchorlock/>
+                                                                                                        <center>
+                                                                                                    <![endif]-->
+                                                                                                        <a href="https://example.com" target="_blank" style="background-color:#1A120B; color: #F5EEE8;display:inline-block; font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px;font-weight:400;line-height:56px;text-align:center;text-decoration:none;width: 184px;-webkit-text-size-adjust:none;">shop now</a>
+                                                                                                    <!--[if mso]>
+                                                                                                        </center>
+                                                                                                        </v:roundrect>
+                                                                                                <![endif]-->
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <!-- END OF CTA BUTTON -->
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <!-- END OF SECTION 2 -->
+
+                                                                        </table>
+                                                                    </div>
+                                                                    <!--[if (gte mso 9)|(IE)]>
+                                                                        </td>
+                                                                        <td valign="top" style="width:32px;"></td>
+                                                                        <td valign="top" style="width:280px;">
+                                                                    <![endif]-->
+                                                                    <div style="display:inline-block;vertical-align:top;">
+                                                                        <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 280px;">
+                                                                            <!-- START OF SPACER -->
+                                                                            <tr>
+                                                                                <td class="darkmode2" height="32px" style="background-color: #FBF8F5; height: 32px; line-height: 32px;"></td>
+                                                                            </tr>
+                                                                            <!-- END OF SPACER -->
+                                                                            
+                                                                            <!-- START OF SECTION 3 -->
+                                                                            <tr>
+                                                                                <td class="darkmode3"  style="background-color: #F5EEE8;">
+                                                                                    <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 280px;">
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/a7dbc971-401a-b4e0-e2c8-1014595a9698.jpg" alt="Woman sitting on motorcycle with her German Shepherd" width="280" style="font-size: 16px;">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top" style="padding: 32px 0 8px 0;">
+                                                                                                <h2 style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#1A120B;">UTILITY BALM</h2>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color:#1A120B;">BEARD BALM / HAIR BALM</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top" style="padding-bottom: 16px;">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color:#1A120B;">SKIN + TATOO MOISTURIZER</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <!-- START OF CTA BUTTON -->
+                                                                                        <tr>
+                                                                                            <td align="center" style="padding-bottom: 32px;">
+                                                                                                <!--[if mso]>
+                                                                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle;width:184px;" arcsize="0%" stroke="f" fillcolor="#1A120B">
+                                                                                                        <w:anchorlock/>
+                                                                                                        <center>
+                                                                                                    <![endif]-->
+                                                                                                        <a href="https://example.com" target="_blank" style="background-color:#1A120B; color: #F5EEE8;display:inline-block; font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px;font-weight:400;line-height:56px;text-align:center;text-decoration:none;width: 184px;-webkit-text-size-adjust:none;">shop now</a>
+                                                                                                    <!--[if mso]>
+                                                                                                        </center>
+                                                                                                        </v:roundrect>
+                                                                                                <![endif]-->
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <!-- END OF CTA BUTTON -->
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <!-- END OF SECTION 3 -->
+
+                                                                            <!-- START OF SPACER -->
+                                                                            <tr>
+                                                                                <td class="darkmode2" height="32px" style="background-color: #FBF8F5; height: 32px; line-height: 32px;"></td>
+                                                                            </tr>
+                                                                            <!-- END OF SPACER -->
+
+                                                                            <!-- START OF SECTION 4 -->
+                                                                            <tr>
+                                                                                <td class="darkmode3" style="background-color: #F5EEE8;">
+                                                                                    <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 280px;">
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <img class="imgFull" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/0603f6b8-7f2a-e7f7-3fb0-8f41647d5a26.jpg" alt="2022 Toyota Tacoma" width="280" style="font-size: 16px;">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top" style="padding: 32px 0 8px 0;">
+                                                                                                <h2 style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#1A120B;">STYLING PASTE</h2>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#1A120B;">HAIR / BEARD / MUSTACHE</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top" style="padding-bottom: 16px;">
+                                                                                                <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#1A120B;">MEDIUM HOLD / SATIN FINISH</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <!-- START OF CTA BUTTON -->
+                                                                                        <tr>
+                                                                                            <td align="center" style="padding-bottom: 32px;">
+                                                                                                <!--[if mso]>
+                                                                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle;width:184px;" arcsize="0%" stroke="f" fillcolor="#1A120B">
+                                                                                                        <w:anchorlock/>
+                                                                                                        <center>
+                                                                                                    <![endif]-->
+                                                                                                        <a href="https://example.com" target="_blank" style="background-color:#1A120B; color: #F5EEE8;display:inline-block; font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px;font-weight:400;line-height:56px;text-align:center;text-decoration:none;width: 184px;-webkit-text-size-adjust:none;">shop now</a>
+                                                                                                    <!--[if mso]>
+                                                                                                        </center>
+                                                                                                        </v:roundrect>
+                                                                                                <![endif]-->
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <!-- END OF CTA BUTTON -->
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <!-- END OF SECTION 4 -->
+                                                                            
+                                                                        </table>
+                                                                    </div>
+                                                                <!--[if (gte mso 9)|(IE)]>
+                                                                    </td>
+                                                                    </tr>
+                                                                    </table>
+                                                                <![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- END of TWO COLUMN LAYOUT -->
+
+                                                <!-- START OF SPACER -->
+                                                <tr>
+                                                    <td class="darkmode2" height="32px" style="background-color: #FBF8F5; height: 32px; line-height: 32px;"></td>
+                                                </tr>
+                                                <!-- END OF SPACER -->
+
+                                                <!-- START OF KIT SECTION -->
+                                                <tr>
+                                                    <td align="center">
+                                                        <img width="600"  src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/661edc2b-5587-ab3d-3fa7-81e35616fbf9.jpg" alt="Jon Bernthal as Frank Castle AKA The Punisher" style="vertical-align: middle; width: 100%; max-width: 600px;">
+                                                    </td>
+                                                </tr>
+                                                <!-- END OF KIT SECTION -->
+
+                                                <!-- START of TWO COLUMN LAYOUT -->
+                                                <tr>
+                                                    <td class="darkmode3" align="center" valign="top" style="padding: 0; background-color: #F5EEE8;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                                            <tr>
+                                                                <td align="center" valign="top" style="font-size:0; padding: 32px 0;">
+                                                                <!--[if (gte mso 9)|(IE)]>
+                                                                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                                    <tr>
+                                                                    <td valign="top" style="width: 288px;">
+                                                                <![endif]-->
+                                                                    <div class="rPad-0" style="display:inline-block;vertical-align:top;">
+                                                                        <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 320px;">
+                                                                            <tr>
+                                                                                <td class="cTxt" valign="top" style="padding: 0 24px 8px;">
+                                                                                    <h2 style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 20px; line-height: 32px; color:#1A120B;">GROOMING KIT</h2>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="cTxt" valign="top" style="padding: 0 24px;">
+                                                                                    <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color:#1A120B;">Includes three versatile sizes of our 100% Boar’s Hair Brushes, travel-friendly Beard Trimming Scissors, and two incredibly smooth Beard Combs.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                <!--[if (gte mso 9)|(IE)]>
+                                                                    </td>
+                                                                    <td valign="top" style="width:32px;"></td>
+                                                                    <td valign="top" style="width:280px;">
+                                                                <![endif]-->
+                                                                    <div style="display:inline-block;vertical-align:top;">
+                                                                        <table class="w100p" cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 280px;">
+                                                                            <!-- START OF CTA BUTTON -->
+                                                                            <tr>
+                                                                                <td align="center" class="tPad-16" style="padding: 40px 0;">
+                                                                                    <!--[if mso]>
+                                                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:56px;v-text-anchor:middle;width:184px;" arcsize="0%" stroke="f" fillcolor="#1A120B">
+                                                                                            <w:anchorlock/>
+                                                                                            <center>
+                                                                                        <![endif]-->
+                                                                                            <a href="https://example.com" target="_blank" style="background-color:#1A120B; color: #F5EEE8;display:inline-block; font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px;font-weight:400;line-height:56px;text-align:center;text-decoration:none;width: 184px;-webkit-text-size-adjust:none;">shop now</a>
+                                                                                        <!--[if mso]>
+                                                                                            </center>
+                                                                                            </v:roundrect>
+                                                                                    <![endif]-->
+                                                                                </td>
+                                                                            </tr>
+                                                                            <!-- END OF CTA BUTTON -->
+                                                                        </table>
+                                                                    </div>
+                                                                <!--[if (gte mso 9)|(IE)]>
+                                                                    </td>
+                                                                    </tr>
+                                                                    </table>
+                                                                <![endif]-->
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- END of TWO COLUMN LAYOUT -->
+
+                                                <!-- START OF FOOTER -->
+                                                <tr>
+                                                    <td align="center" class="cTxt" valign="top" style="padding: 40px 24px;">
+                                                        <a href="https://example.com" target="_blank" style="font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; color:#D90429; margin:0; padding:0; text-align: left; text-decoration: underline;">View in Browser</a>
+                                                        <p style="font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color:#1A120B;">
+                                                            No longer want to receive these emails? <a href="https://example.com" target="_blank" style="font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; color:#D90429; margin:0; padding:0; text-align: left; text-decoration: underline;">Unsubscribe</a>
+                                                        </p>
+                                                        <p style="margin: 0; padding: 0;font-family:'Overpass', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 14px; line-height: 24px; color:#1A120B;">Shaggy's, 56120 Dynamic St, Orosi, CA 93647</p>
+                                                    </td>
+                                                </tr>
+                                                <!-- END OF FOOTER -->
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -12,21 +12,21 @@ let isSettingsVisible = false;
 
 const emailSource = {
 	dailySentry: {
-		url:          "https://zekelkeys.com/newsletter-email/",
+		url:          "html/newsletter.html",
 		mobileDark:   "images/daily-sentry/mobile-dark.jpg",
 		mobileLight:  "images/daily-sentry/mobile-light.jpg",
 		desktopDark:  "images/daily-sentry/desktop-dark.jpg",
 		desktopLight: "images/daily-sentry/desktop-light.jpg",
 	},
 	shaggys: {
-		url:          "https://zekelkeys.com/promotional-email/",
+		url:          "html/promotional.html",
 		mobileDark:   "images/shaggys/mobile-dark.jpg",
 		mobileLight:  "images/shaggys/mobile-light.jpg",
 		desktopDark:  "images/shaggys/desktop-dark.jpg",
 		desktopLight: "images/shaggys/desktop-light.jpg",
 	},
 	solace: {
-		url:          "https://zekelkeys.com/donation-request-email/",
+		url:          "html/donation-request.html",
 		mobileDark:   "images/solace/mobile-dark.jpg",
 		mobileLight:  "images/solace/mobile-light.jpg",
 		desktopDark:  "images/solace/desktop-dark.jpg",
