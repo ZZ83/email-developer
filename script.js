@@ -8,6 +8,8 @@ const darkModeSwitch = document.getElementById('check-dark-mode');
 const modalImage     = document.getElementById('modal-image');
 const viewInBrowser  = document.getElementById('view-in-browser');
 
+let isSettingsVisible = false;
+
 const emailSource = {
 	dailySentry: {
 		url:          "https://zekelkeys.com/newsletter-email/",
@@ -65,9 +67,20 @@ function resetInputs() {
 closeModal.addEventListener('click', function() {
 	overlay.style.display = "none";
 	modalImage.style.maxWidth = "600px";
+	document.body.style.overflow = "initial";
+});
+
+overlay.addEventListener('click', function(event) {
+    if (isSettingsVisible && event.target.classList.contains("overlay")) {
+        overlay.style.display = "none";
+        isSettingsVisible = false;
+		document.body.style.overflow = "initial";
+    }
 });
 
 dailySentry.addEventListener('click', function() {
+	document.body.style.overflow = "hidden";
+	isSettingsVisible = true;
 	resetInputs();
 	overlay.style.display = "flex";
 	modalImage.src = emailSource.dailySentry.desktopDark;
@@ -77,6 +90,8 @@ dailySentry.addEventListener('click', function() {
 });
 
 shaggys.addEventListener('click', function() {
+	document.body.style.overflow = "hidden";
+	isSettingsVisible = true;
 	resetInputs();
 	overlay.style.display = "flex";
 	modalImage.src = emailSource.shaggys.desktopDark;
@@ -86,6 +101,8 @@ shaggys.addEventListener('click', function() {
 });
 
 solace.addEventListener('click', function() {
+	document.body.style.overflow = "hidden";
+	isSettingsVisible = true;
 	resetInputs();
 	overlay.style.display = "flex";
 	modalImage.src = emailSource.solace.desktopDark;

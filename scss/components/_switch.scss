@@ -6,9 +6,11 @@
     align-items: center;
     justify-content: center;
     color: var(--primary); 
+    
 }
     .switch__header {
         margin-bottom: rem(8px);
+        cursor: pointer;
     }
     .switch__input {
         width: 0;

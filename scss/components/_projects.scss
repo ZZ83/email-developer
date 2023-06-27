@@ -14,30 +14,42 @@
     @include mq(large) {
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
     }
 }
+    .project__inner {
+        height: 100%;
+        @include mq(large) {
+            padding-left: rem(8px);
+            padding-right: rem(24px);
+        }
+    }
     .project__image {
         display: block;
         width: 100%;
+        height: auto;
         border-radius: 8px;
         background-color: var(--secondary);
         @include mq(large) {
-            width: 55%;
-            cursor: pointer;
+            width: 52%;
         }
     }
     .project__header {
         margin-top: rem(16px);
         margin-bottom: rem(8px);
         font-size: var(--fs-550);
-        @include mq(large) {
+        @include mq(medium) {
             margin-top: rem(32px);
+            margin-bottom: rem(16px);
+        }
+        @include mq(large) {
+            margin-top: 0;
         }
     }
     .project__paragraph {
         margin-bottom: rem(16px);
         @include mq(large) {
-            padding-right: rem(24px);
+            padding-right: 0 rem(24px);
         }
     }
     .project__list {
