@@ -1,18 +1,6 @@
-h1,
-h2 {
-    font-size:      var(--fs-700);
-    line-height:    var(--lh-700);
-    letter-spacing: var(--ls-700);
-}
-
-h3 {
-    font-size:      var(--fs-600);
-    line-height:    var(--lh-600);
-    letter-spacing: var(--ls-600); 
-}
+@use '../00-abstracts' as *;
 
 p {
-    font-size:   var(--fs-400);
-    line-height: var(--lh-400);
-    font-weight: 500;
+    font-size:   rem(16px);
+    line-height: rem(30px);
 }

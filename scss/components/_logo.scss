@@ -1,19 +1,10 @@
 @use '../00-abstracts' as *;
 
 .logo {
-    width:  rem(40px);
-    height: rem(40px);
-    fill: var(--secondary);
+    width:  rem(48px);
+    height: rem(24px);
     @include mq(small) {
-        width:  rem(48px);
-        height: rem(48px);
-    }
-    @include mq(medium) {
-        width:  rem(56px);
-        height: rem(56px);
-    }
-    @include mq(large) {
-        width:  rem(64px);
-        height: rem(64px);
+        width:  rem(60px);
+        height: rem(32px);
     }
 }
