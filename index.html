@@ -17,16 +17,19 @@
 <body>
   	<!-- ***** Header ***** -->
 	<header class="header wrapper" role="banner">
+		<!-- ***** Logo ***** -->
 		<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 32" ><path fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
-		<nav class="nav" role="navigation">
-			<ul class="nav__items">
-				<li class="nav__item"><a href="#skills"   class="nav__link">Home</a></li>
-				<li class="nav__item"><a href="#projects" class="nav__link">Portfolio</a></li>
-				<li class="nav__item"><a href="#contact"  class="nav__link">Contact Me</a></li>
+		<!-- ***** Primary Navigation ***** -->
+		<nav class="primaryNav">
+			<ul class="primaryNav__items">
+				<li class="primaryNav__item"><a href="#skills"   class="primaryNav__link">Home</a></li>
+				<li class="primaryNav__item"><a href="#projects" class="primaryNav__link">Portfolio</a></li>
+				<li class="primaryNav__item"><a href="#contact"  class="primaryNav__link">Contact Me</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+		<!-- ***** Hero Section ***** -->
 		<section class="hero wrapper">
 			<picture>
 				<source srcset="/images/homepage/desktop/image-homepage-hero.jpg, /images/homepage/desktop/image-homepage-hero@2x.jpg 2x" media="(min-width: 1200px)">
@@ -34,36 +37,20 @@
 				<source srcset="/images/homepage/mobile/image-homepage-hero.jpg,  /images/homepage/mobile/image-homepage-hero@2x.jpg  2x">
 				<img class="hero__image" src="/images/homepage/mobile/image-homepage-hero.jpg" alt="">
 			</picture>
+			<!-- ***** Box ***** -->
 			<div class="box">
 				<h1 class="box__header">Hey, I’m Zekel Keys and I love building beautiful emails</h1>
-
-
-
-
-				
-					
-					<a class="aboutButton" href="">
-						<svg class="aboutButton__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-							<rect class="aboutButton__rect"/>
-							<path class="aboutButton__path"                d="M16 26L24 30L32 26"/>
-							<path class="aboutButton__path" opacity="0.5"  d="M16 22L24 26L32 22"/>
-							<path class="aboutButton__path" opacity="0.25" d="M16 18L24 22L32 18"/>
-						</svg>
-						<span class="aboutButton__link">About Me</span>
-					</a>
-				
+				<!-- ***** About Link ***** -->
+				<a class="btn-primary" href="">About Me</a>
 			</div>
 		</section>
+		<!-- ***** About Section ***** -->
+		<!-- <section class="wrapper">
+			<img class="" src="/images/homepage/mobile/image-homepage-profile.jpg" alt="">
 		
-		
-		<section style="height: 1000px;"></section>
-	
-	
+		</section> -->
 	</main>
-	<footer>
-
-	</footer>
-
+	<footer></footer>
 	<script src="script.js"></script>
 </body>
 </html>

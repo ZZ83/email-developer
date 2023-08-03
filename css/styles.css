@@ -374,8 +374,6 @@ html {
   --hover: #5FB4A2;
 }
 
-/* space-grotesk-500 - latin */
-/* space-grotesk-600 - latin */
 /* ibarra-real-nova-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -397,8 +395,8 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 700;
   font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -428,13 +426,13 @@ li {
 }
 
 a {
-  color: var(--secondary);
-  text-decoration: none;
   font-size: 0.625rem;
-  font-weight: 400;
   line-height: 0.875rem;
+  font-weight: 400;
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
+  color: var(--secondary);
 }
 @media (min-width: 375px) {
   a {
@@ -444,38 +442,20 @@ a {
 
 .wrapper {
   margin: 0 auto;
+  max-width: 30.3125rem;
   padding: 0 1.5rem;
 }
 @media (min-width: 768px) {
   .wrapper {
+    max-width: 54.6875rem;
     padding: 0 2.5rem;
   }
 }
 @media (min-width: 1200px) {
   .wrapper {
-    padding: 0;
     max-width: 69.375rem;
+    padding: 0;
   }
-}
-
-.section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-@media (min-width: 768px) {
-  .section {
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
-  }
-}
-
-.section--bg {
-  background-color: var(--tertiary);
-}
-
-.underline {
-  display: inline-block;
-  border-bottom: 4px solid var(--accent);
 }
 
 .header {
@@ -501,26 +481,26 @@ a {
   }
 }
 
-.nav {
+.primaryNav {
   width: 75%;
   max-width: 15rem;
 }
 @media (min-width: 375px) {
-  .nav {
+  .primaryNav {
     max-width: 25rem;
   }
 }
 
-.nav__items {
+.primaryNav__items {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__item a {
+.primaryNav__link {
   color: var(--secondary);
 }
-.nav__item a:hover {
+.primaryNav__link:hover {
   color: var(--hover);
 }
 
@@ -548,10 +528,9 @@ a {
 @media (min-width: 768px) {
   .box {
     position: absolute;
-    background-color: var(--primary);
     bottom: 0;
-    left: 32;
     width: 32.125rem;
+    background-color: var(--primary);
   }
 }
 @media (min-width: 1200px) {
@@ -560,8 +539,13 @@ a {
   }
 }
 
+.box__header {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
 @media (min-width: 768px) {
   .box__header {
+    margin: 0;
     width: 22.5rem;
     padding-top: 3.5rem;
     padding-bottom: 3rem;
@@ -574,49 +558,20 @@ a {
   }
 }
 
-.u-flex {
+.btn-primary {
   display: flex;
-}
-
-.aboutButton {
-  display: inline-flex;
-  fill: #1D3444;
+  align-items: center;
+  justify-content: center;
+  width: 12.5rem;
+  height: 3rem;
   background-color: var(--tertiary);
+  color: var(--primary);
 }
-
-.aboutButton:hover {
-  fill: #56A292;
+.btn-primary:hover {
   background-color: var(--hover);
 }
 
-.aboutButton__svg,
-.aboutButton__rect {
-  width: 3rem;
-  height: 3rem;
-}
-
-.aboutButton__svg {
-  background-color: #1D3444;
-}
-
-.aboutButton:hover .aboutButton__svg {
-  background-color: #56a292;
-}
-
-.aboutButton__path {
-  stroke: #5FB4A2;
-}
-
-.aboutButton:hover .aboutButton__path {
-  stroke: #FFFFFF;
-}
-
-.aboutButton__link {
-  color: var(--primary);
-  padding: 1.0625rem 2rem;
-}
-
-.btn {
+.btn-secondary {
   padding: 1.0625rem 2rem;
 }
 

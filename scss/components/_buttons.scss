@@ -1,5 +1,18 @@
 @use '../00-abstracts' as *;
 
-.btn {
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(200px);
+    height: rem(48px);
+    background-color: var(--tertiary);
+    color: var(--primary);
+    &:hover {
+        background-color: var(--hover);
+    }
+}
+
+.btn-secondary {
     padding: rem(17px) rem(32px);
 }

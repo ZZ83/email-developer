@@ -1,19 +1,18 @@
 @use '../00-abstracts' as *;
 
-.nav {
+.primaryNav {
     width: 75%;
     max-width: rem(240px);
     @include mq(small) {
-        // width: 65%;
         max-width: rem(400px);
     }
 }
-    .nav__items {
+    .primaryNav__items {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .nav__item a {
+    .primaryNav__link {
         color: var(--secondary);
         &:hover {
             color: var(--hover);
