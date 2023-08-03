@@ -369,21 +369,49 @@ html {
 :root {
   --primary: #FAFAFA;
   --secondary: #33323D;
-  --tertiary: #16213e;
+  --tertiary: #203A4C;
   --accent: #eb4c69;
   --hover: #5FB4A2;
 }
 
 /* space-grotesk-500 - latin */
 /* space-grotesk-600 - latin */
+/* ibarra-real-nova-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ibarra-real-nova-v25-latin-700.woff2") format("woff2"), url("../fonts/ibarra-real-nova-v25-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--primary);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Public Sans", sans-serif;
   color: var(--secondary);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  letter-spacing: -0.0225rem;
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    letter-spacing: -0.028125rem;
+  }
 }
 
 p {
@@ -402,21 +430,31 @@ li {
 a {
   color: var(--secondary);
   text-decoration: none;
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+@media (min-width: 375px) {
+  a {
+    font-size: 0.75rem;
+  }
 }
 
 .wrapper {
-  max-width: 50rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 @media (min-width: 768px) {
   .wrapper {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
 }
 @media (min-width: 1200px) {
   .wrapper {
-    max-width: 73.375rem;
+    padding: 0;
+    max-width: 69.375rem;
   }
 }
 
@@ -474,19 +512,9 @@ a {
 }
 
 .nav__items {
-  font-size: 10px;
-  font-weight: 400;
-  font-family: "Public Sans", sans-serif;
-  letter-spacing: 0.125rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
-}
-@media (min-width: 375px) {
-  .nav__items {
-    font-size: 12px;
-  }
 }
 
 .nav__item a {
@@ -494,6 +522,102 @@ a {
 }
 .nav__item a:hover {
   color: var(--hover);
+}
+
+.hero {
+  position: relative;
+  margin-top: 2.5rem;
+}
+@media (min-width: 768px) {
+  .hero {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    margin-top: 3.5rem;
+  }
+}
+
+.hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .box {
+    position: absolute;
+    background-color: var(--primary);
+    bottom: 0;
+    left: 32;
+    width: 32.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  .box {
+    width: 27.8125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .box__header {
+    width: 22.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .box__header {
+    width: 24.375rem;
+    padding-bottom: 3.3125rem;
+  }
+}
+
+.u-flex {
+  display: flex;
+}
+
+.aboutButton {
+  display: inline-flex;
+  fill: #1D3444;
+  background-color: var(--tertiary);
+}
+
+.aboutButton:hover {
+  fill: #56A292;
+  background-color: var(--hover);
+}
+
+.aboutButton__svg,
+.aboutButton__rect {
+  width: 3rem;
+  height: 3rem;
+}
+
+.aboutButton__svg {
+  background-color: #1D3444;
+}
+
+.aboutButton:hover .aboutButton__svg {
+  background-color: #56a292;
+}
+
+.aboutButton__path {
+  stroke: #5FB4A2;
+}
+
+.aboutButton:hover .aboutButton__path {
+  stroke: #FFFFFF;
+}
+
+.aboutButton__link {
+  color: var(--primary);
+  padding: 1.0625rem 2rem;
+}
+
+.btn {
+  padding: 1.0625rem 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

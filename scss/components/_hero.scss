@@ -1,0 +1,23 @@
+@use '../00-abstracts' as *;
+
+.hero {
+    position: relative;
+    margin-top: rem(40px);
+    @include mq(medium) {
+        margin-top: rem(48px);
+    }
+    @include mq(large) {
+        margin-top: rem(56px);
+    }
+}
+
+.hero__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+

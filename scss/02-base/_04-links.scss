@@ -3,4 +3,12 @@
 a {
     color: var(--secondary);
     text-decoration: none;
+    font-size: rem(10px);
+    font-weight: 400;
+    line-height: rem(14px);
+    text-transform: uppercase;
+    letter-spacing: rem(2px);
+    @include mq(small) {
+        font-size: rem(12px);
+    }
 }

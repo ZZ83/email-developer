@@ -9,18 +9,9 @@
     }
 }
     .nav__items {
-        font-size: 10px;
-        font-weight: 400;
-        font-family: 'Public Sans', sans-serif;
-        letter-spacing: rem(2px);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        text-transform: uppercase;
-
-        @include mq(small) {
-            font-size: 12px;
-        }
     }
     .nav__item a {
         color: var(--secondary);

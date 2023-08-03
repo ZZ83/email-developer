@@ -1,5 +1,25 @@
 @use '../00-abstracts' as *;
 
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    font-family: 'Ibarra Real Nova', serif;
+
+}
+
+h1 {
+    font-size:   rem(40px);
+    line-height: rem(42px);
+    letter-spacing: rem(-0.36px);
+    @include mq(large) {
+        font-size:   rem(50px);
+        line-height: rem(50px);
+        letter-spacing: rem(-0.45px);
+    }
+}
+
+
 p {
     font-size:   rem(16px);
     line-height: rem(30px);

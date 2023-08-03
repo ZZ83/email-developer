@@ -1,0 +1,32 @@
+@use '../00-abstracts' as *;
+
+.box {
+    @include mq(medium) {
+        position: absolute;
+        background-color: var(--primary);
+        bottom: 0;
+        left: 32;
+        width: rem(514px);
+    }
+    @include mq(large) {
+        width: rem(445px);
+    
+    }
+}
+
+
+.box__header {
+    @include mq(medium) {
+        width: rem(360px);
+        padding-top: rem(56px);
+        padding-bottom: rem(48px);
+    }
+    @include mq(large) {
+        width: rem(390px);
+        padding-bottom: rem(53px);
+    }
+}
+
+.u-flex {
+    display: flex;
+}

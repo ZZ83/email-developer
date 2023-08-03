@@ -20,12 +20,22 @@
 // 		 url('../fonts/space-grotesk-v15-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 // }
 
+/* ibarra-real-nova-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ibarra-real-nova-v25-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/ibarra-real-nova-v25-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--primary);
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Public Sans', sans-serif;
     color: var(--secondary);
 }
