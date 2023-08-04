@@ -392,6 +392,12 @@ body {
   color: var(--secondary);
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3 {
@@ -410,6 +416,12 @@ h1 {
     line-height: 3.125rem;
     letter-spacing: -0.028125rem;
   }
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  letter-spacing: -0.0225rem;
 }
 
 p {
@@ -519,12 +531,6 @@ a {
   }
 }
 
-.hero__image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 @media (min-width: 768px) {
   .box {
     position: absolute;
@@ -572,7 +578,61 @@ a {
 }
 
 .btn-secondary {
+  display: inline-block;
+  border: 1px solid var(--secondary);
   padding: 1.0625rem 2rem;
+}
+.btn-secondary:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.about {
+  margin-top: 6rem;
+  margin-bottom: 7.1875rem;
+}
+@media (min-width: 768px) {
+  .about {
+    display: flex;
+    gap: 4.3125rem;
+    margin-bottom: 6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    gap: 7.8125rem;
+    margin-top: 9.375rem;
+    margin-bottom: 9.375rem;
+  }
+}
+
+.aboutSummary {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3.1875rem;
+  border-top: 1px solid #DCDCDE;
+  border-bottom: 1px solid #DCDCDE;
+}
+@media (min-width: 768px) {
+  .aboutSummary {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 0;
+    width: 21.1875rem;
+    padding-top: 3.0625rem;
+    padding-bottom: 2.8125rem;
+  }
+}
+@media (min-width: 1200px) {
+  .aboutSummary {
+    width: 21.875rem;
+  }
+}
+
+.aboutSummary__text {
+  margin-top: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

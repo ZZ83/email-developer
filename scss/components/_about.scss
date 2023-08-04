@@ -1,0 +1,16 @@
+@use '../00-abstracts' as *;
+
+.about {
+    margin-top:    rem(96px);
+    margin-bottom: rem(115px);
+    @include mq(medium) {
+        display: flex;
+        gap: rem(69px);
+        margin-bottom: rem(96px);
+    }
+    @include mq(large) {
+        gap: rem(125px);
+        margin-top:    rem(150px);
+        margin-bottom: rem(150px);
+    }
+}

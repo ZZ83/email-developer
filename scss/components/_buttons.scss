@@ -14,5 +14,11 @@
 }
 
 .btn-secondary {
+    display: inline-block;
+    border: 1px solid var(--secondary);
     padding: rem(17px) rem(32px);
+    &:hover {
+        background-color: var(--secondary);
+        color: var(--primary);
+    }
 }
