@@ -382,6 +382,14 @@ html {
   font-weight: 700;
   src: url("../fonts/ibarra-real-nova-v25-latin-700.woff2") format("woff2"), url("../fonts/ibarra-real-nova-v25-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
+/* public-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/public-sans-v14-latin-regular.woff2") format("woff2"), url("../fonts/public-sans-v14-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 html {
   scroll-behavior: smooth;
 }
@@ -440,7 +448,6 @@ li {
 a {
   font-size: 0.625rem;
   line-height: 0.875rem;
-  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
