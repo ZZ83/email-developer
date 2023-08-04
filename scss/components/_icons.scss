@@ -1,0 +1,13 @@
+@use '../00-abstracts' as *;
+
+.icons {
+    display: flex;
+    gap: rem(15px);
+}
+
+    .icons__link {
+        fill: var(--primary);
+        &:hover {
+            fill: var(--hover);
+        }
+    }

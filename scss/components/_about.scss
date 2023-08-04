@@ -3,10 +3,12 @@
 .about {
     margin-top:    rem(96px);
     margin-bottom: rem(115px);
+    scroll-margin-top: rem(40px);
     @include mq(medium) {
         display: flex;
         gap: rem(69px);
         margin-bottom: rem(96px);
+        scroll-margin-top: rem(72px);
     }
     @include mq(large) {
         gap: rem(125px);

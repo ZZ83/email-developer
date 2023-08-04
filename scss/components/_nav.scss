@@ -12,8 +12,38 @@
         justify-content: space-between;
         align-items: center;
     }
+
     .primaryNav__link {
         color: var(--secondary);
+        &:hover {
+            color: var(--hover);
+        }
+    }
+
+.secondaryNav {
+    @include mq(medium) {
+        width: rem(309px);
+        margin-left: rem(48px);
+        margin-right: auto;
+    }
+}
+
+    .secondaryNav__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(32px);
+        padding: rem(40px) 0;
+        @include mq(medium) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+        }
+    }
+
+    .secondaryNav__link {
+        color: var(--primary);
         &:hover {
             color: var(--hover);
         }

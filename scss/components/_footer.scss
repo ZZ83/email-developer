@@ -1,0 +1,20 @@
+@use '../00-abstracts' as *;
+
+.footerBackground {
+    background-color: var(--secondary);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:    rem(56px);
+    padding-bottom: rem(56px);
+    background-color: var(--secondary);
+    @include mq(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top:    rem(24px);
+        padding-bottom: rem(24px);
+    }
+}

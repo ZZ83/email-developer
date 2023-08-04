@@ -3,8 +3,19 @@
 .logo {
     width:  rem(48px);
     height: rem(24px);
+    fill: var(--secondary);
     @include mq(small) {
         width:  rem(60px);
         height: rem(32px);
+    }
+    &:hover {
+        fill: var(--hover);
+    }
+}
+
+.logo.-footer {
+    fill: var(--primary);
+    &:hover {
+        fill: var(--hover);
     }
 }
