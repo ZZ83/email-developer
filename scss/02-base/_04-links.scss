@@ -7,6 +7,7 @@ a {
     text-transform: uppercase;
     letter-spacing: rem(2px);
     color: var(--secondary);
+    font-weight: 600;
     @include mq(small) {
         font-size: rem(12px);
     }

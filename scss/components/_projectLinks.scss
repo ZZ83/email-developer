@@ -1,0 +1,29 @@
+@use '../00-abstracts' as *;
+
+.projectLinks {
+    display: flex;
+    gap: rem(32px);
+    align-items: baseline;
+    @media (min-width: rem(820px)) {
+        flex-direction: row;
+    }
+}
+
+    .projectLinks__link {
+        border-bottom: 2px solid var(--secondary);
+        line-height: 32px;
+        &:hover {
+            border-bottom: 2px solid var(--hover);
+            color: var(--hover);
+        }
+        @include mq(large) {
+            border: 1px solid var(--secondary);
+            padding: rem(17px) rem(32px);
+            line-height: rem(14px);
+            &:hover {
+                border-bottom: 1px solid var(--secondary);
+                background-color: var(--secondary);
+                color: var(--primary);
+            }
+        }
+    }
