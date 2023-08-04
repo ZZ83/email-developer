@@ -635,4 +635,43 @@ a {
   margin-bottom: 1.5rem;
 }
 
+.contactMe {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .contactMe {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contactMe {
+    padding-bottom: 9.375rem;
+  }
+}
+
+.contactMe__header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contactMe__header {
+    width: 21.875rem;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.contactMe__line {
+  flex-grow: 2;
+  margin: 0 2rem;
+  height: 0.0625rem;
+  background-color: #DCDCDE;
+}
+
 /*# sourceMappingURL=styles.css.map */

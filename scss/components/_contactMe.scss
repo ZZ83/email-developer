@@ -1,0 +1,34 @@
+@use '../00-abstracts' as *;
+
+.contactMe {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: rem(80px);
+    @include mq(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: rem(96px);
+    }
+    @include mq(large) {
+        padding-bottom: rem(150px);
+    }
+}
+
+    .contactMe__header {
+        margin-bottom: rem(40px);
+        text-align: center;
+        @include mq(medium) {
+            width: rem(350px);
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+
+    .contactMe__line {
+        flex-grow: 2;
+        margin: 0 rem(32px);
+        height: rem(1px);
+        background-color: #DCDCDE;
+    }
