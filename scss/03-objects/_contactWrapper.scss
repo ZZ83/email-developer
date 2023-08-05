@@ -1,0 +1,13 @@
+@use '../00-abstracts' as *;
+
+.contactWrapper {
+    margin-top:    rem(40px);
+    margin-bottom: rem(56px);
+    @include mq(medium) {
+        margin-top:    rem(80px);
+        margin-bottom: rem(64px);
+    }
+    @include mq(large) {
+        margin-bottom: rem(62px);
+    }
+}

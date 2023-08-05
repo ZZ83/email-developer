@@ -1,0 +1,10 @@
+@use '../00-abstracts' as *;
+
+.getInTouch__text {
+    padding-top:    rem(24px);
+    padding-bottom: rem(24px);
+    @include mq(large) {
+        width: rem(635px);
+        padding-top: 0;
+    }
+}

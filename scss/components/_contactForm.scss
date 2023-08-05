@@ -1,0 +1,9 @@
+@use '../00-abstracts' as *;
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    @include mq(large) {
+        width: rem(635px);
+    }
+}

@@ -1,0 +1,17 @@
+@use '../00-abstracts' as *;
+
+.section {
+    border-top: 1px solid #DCDCDE;
+    padding-top:    rem(24px);
+    padding-bottom: rem(24px);
+    @include mq(medium) {
+        padding-top:    rem(32px);
+        padding-bottom: rem(32px);
+    }
+    @include mq(large) {
+        display: flex;
+        justify-content: space-between;
+        padding-top:    rem(48px);
+        padding-bottom: rem(48px);
+    }
+}

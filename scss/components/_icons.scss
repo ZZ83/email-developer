@@ -11,3 +11,10 @@
             fill: var(--hover);
         }
     }
+
+    .icons__link.-contact {
+        fill: var(--secondary);
+        &:hover {
+            fill: var(--hover);
+        }
+    }
