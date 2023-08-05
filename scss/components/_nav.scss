@@ -1,9 +1,12 @@
 @use '../00-abstracts' as *;
 
 .primaryNav {
-    width: 75%;
-    max-width: rem(240px);
+    width: 80%;
     @include mq(small) {
+        width: 77.5%;
+        max-width: rem(300px);
+    }
+    @include mq(medium) {
         max-width: rem(400px);
     }
 }
@@ -19,6 +22,7 @@
             color: var(--hover);
         }
     }
+
 
 .secondaryNav {
     @include mq(medium) {

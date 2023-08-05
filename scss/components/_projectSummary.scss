@@ -13,13 +13,11 @@
         align-items: baseline;
         justify-content: center;
         margin: 0;
-        width: rem(339px);
         width: 50%;
         padding-top: rem(49px);
         padding-bottom: rem(45px);
     }
     @include mq(large) {
-        width: 50%;
         padding: 0;
     }
 }

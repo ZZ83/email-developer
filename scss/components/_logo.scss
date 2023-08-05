@@ -1,8 +1,8 @@
 @use '../00-abstracts' as *;
 
 .logo {
-    width:  rem(48px);
-    height: rem(24px);
+    width:  rem(40px);
+    height: rem(20px);
     fill: var(--secondary);
     @include mq(small) {
         width:  rem(60px);

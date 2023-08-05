@@ -499,8 +499,8 @@ a {
 }
 
 .logo {
-  width: 3rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 1.25rem;
   fill: var(--secondary);
 }
 @media (min-width: 375px) {
@@ -521,10 +521,15 @@ a {
 }
 
 .primaryNav {
-  width: 75%;
-  max-width: 15rem;
+  width: 80%;
 }
 @media (min-width: 375px) {
+  .primaryNav {
+    width: 77.5%;
+    max-width: 18.75rem;
+  }
+}
+@media (min-width: 768px) {
   .primaryNav {
     max-width: 25rem;
   }
@@ -768,22 +773,34 @@ a {
 }
 
 .projects {
-  margin-top: 6rem;
-  margin-bottom: 7.1875rem;
+  margin-top: 2.5rem;
+  margin-bottom: 4.5rem;
 }
 @media (min-width: 768px) {
   .projects {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
-    margin-bottom: 6rem;
+    gap: 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 @media (min-width: 1200px) {
   .projects {
     align-items: initial;
-    gap: 7.8125rem;
-    margin-top: 9.375rem;
+    gap: 7.5rem;
+  }
+}
+.projects:last-child {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .projects:last-child {
+    margin-bottom: 6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .projects:last-child {
     margin-bottom: 9.375rem;
   }
 }
@@ -809,7 +826,6 @@ a {
     align-items: baseline;
     justify-content: center;
     margin: 0;
-    width: 21.1875rem;
     width: 50%;
     padding-top: 3.0625rem;
     padding-bottom: 2.8125rem;
@@ -817,7 +833,6 @@ a {
 }
 @media (min-width: 1200px) {
   .projectSummary {
-    width: 50%;
     padding: 0;
   }
 }
