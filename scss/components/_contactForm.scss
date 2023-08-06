@@ -6,4 +6,64 @@
     @include mq(large) {
         width: rem(635px);
     }
-}
+}   
+
+    .contactForm__label[for="name"],
+    .contactForm__label[for="email"],
+    .contactForm__label[for="message"],
+    .contactForm__submit[type="submit"] {
+        margin-top: rem(24px);
+    }
+
+    .contactForm__label,
+    .contactForm__input {
+        font-size: rem(13px);
+        line-height: rem(30px);
+    }
+
+    .contactForm__label[for="name"] {
+        @include mq(large) {
+            margin-top: 0;
+        }
+    }
+
+    .contactForm__label {
+        font-weight: 700;
+    }
+
+    .contactForm__input {
+        margin-top: rem(8px);
+        padding-left: rem(16px);
+        height: rem(48px);
+        border: none;
+        outline: none;
+        background-color: #E6E6E7;
+        color: var(--secondary);
+        &:focus {
+            border: 2px solid var(--secondary);
+        }
+        &::placeholder {
+            color: var(--secondary);;
+            opacity: 0.4;
+        }
+    }
+
+    .contactForm__input.-active {
+        border: 2px solid var(--hover);
+    }
+
+    .contactForm__input.-error {
+        border: 2px solid red;
+    }
+
+    .contactForm__input.-textarea {
+        height: rem(96px);
+        padding-top: rem(8px);
+    }
+
+    .contactForm__submit {
+        border: none;
+        cursor: pointer;
+        font-size: rem(12px);
+        letter-spacing: rem(2px);
+    }

@@ -28,3 +28,11 @@ p {
     font-size:   rem(16px);
     line-height: rem(30px);
 }
+
+small {
+    padding-top: rem(4px);
+    font-size: rem(12px);
+    font-weight: 700; 
+    font-style: italic;
+    color: red; 
+}
