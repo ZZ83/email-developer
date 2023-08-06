@@ -40,20 +40,12 @@
         background-color: #E6E6E7;
         color: var(--secondary);
         &:focus {
-            border: 2px solid var(--secondary);
+            border: 1px solid var(--secondary);
         }
         &::placeholder {
             color: var(--secondary);;
             opacity: 0.4;
         }
-    }
-
-    .contactForm__input.-active {
-        border: 2px solid var(--hover);
-    }
-
-    .contactForm__input.-error {
-        border: 2px solid red;
     }
 
     .contactForm__input.-textarea {
