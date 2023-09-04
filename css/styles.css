@@ -466,11 +466,10 @@ p {
 }
 
 small {
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   font-size: 0.75rem;
   font-weight: 700;
   font-style: italic;
-  color: red;
 }
 
 ul {
