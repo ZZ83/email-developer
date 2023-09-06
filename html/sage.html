@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <!-- Help character display properly. -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- Set the initial scale of the email. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Force Outlook clients to render with a better MS engine. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <!-- Help prevent blue links and autolinking -->
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+        <!-- Prevent Apple from reformatting and zooming messages. -->
+        <meta name="x-apple-disable-message-reformatting">
+        <!-- Target dark mode -->
+        <meta name="color-scheme"            content="light dark">
+        <meta name="supported-color-schemes" content="light dark only">
+        <!-- The title tag -->
+        <title>Daily Sentry Newsletter</title>
+
+        <!-- To support dark mode meta tags -->
+        <style type="text/css">
+            :root {
+                color-scheme: light dark;
+                supported-color-schemes: light dark;
+            }
+        </style>
+
+        <!-- Web fonts / @font-face -->
+        <style>
+            @media screen {
+                /* latin */
+                @font-face {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* latin */
+                @font-face {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* latin */
+                @font-face {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* latin */
+                @font-face {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/manrope/v14/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+            }
+        </style>
+
+        <!-- Resets -->
+        <style type="text/css">
+            /** Client-specific styles **/
+            /* Stops email clients resizing small text. */
+            body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+            /* Stops Outlook from adding extra spacing to tables. */
+            table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+
+            /* Uses a better rendering method when resizing images in Outlook IE. */
+            img { -ms-interpolation-mode: bicubic; }
+            
+            /* General reset styles */
+            *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+            body  { width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; }
+            table { border-collapse: collapse !important; }
+            img   { display: block; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+            h1, h2, h3, p { margin: 0; padding: 0; }
+
+            /* Remove underline from link */
+            a { text-decoration: none; }
+
+            /* Centre email on Android 4.4 - margin reset */
+            div[style*="margin:16px 0"] {
+                margin: 0 !important;
+            }
+
+            /* Prevent Apple blue links. */
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size:   inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
+
+            /* Prevent Gmail blue links. */
+            u + .body a {
+                color: inherit;
+                text-decoration: none;
+                font-size:   inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+
+            /* Prevent Samsung blue links. */
+            #MessageViewBody a {
+                color: inherit;
+                text-decoration: none;
+                font-size:   inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+
+            .body-fix {
+                word-spacing: normal;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+        </style>
+
+        <!-- Mobile styles -->
+        <style>
+            @media screen and (max-width:600px) {
+                .w90p  { width: 90%  !important; }
+                .w95p  { width: 95%  !important; }
+                .w100p { width: 100% !important; }
+                .imgFull { width: 100% !important; height: auto !important; }
+                .desktop { width: 0 !important; display: none !important; }
+                .mobile { display: block !important; }
+                .tbPad-0   { padding-top: 0 !important; padding-bottom: 0 !important;}
+                .tbPad-16 { padding-top: 16px !important; padding-bottom: 16px !important; }
+                .lrPad-32 { padding-left: 32px !important; padding-right: 32px !important;}
+                .hideMobile { display: none !important; }
+                .logo { font-size: 36px !important; }
+                .sagetober           { padding: 24px 0 ! important; }
+                .sagetoberLines      { width: 50px ! important; }
+                .sagetoberHeader     { font-size: 48px !important; line-height: 48px !important;}
+                .sagetoberSubHeaders { font-size: 20px !important; }
+                .categoryH2 { font-size: 18px !important; letter-spacing: 2px !important; }
+                .categoryH3 { font-size: 40px !important; line-height: 48px !important;}
+            }
+        </style>
+
+        <!-- Dark mode styles -->
+        <style>
+            @media (prefers-color-scheme: dark) {
+                /* Shows Dark Mode-Only Content, Like Images */
+                .dark-img {
+                    display: block !important;
+                    width: auto !important;
+                    overflow: visible !important;
+                    float: none !important;
+                    max-height: inherit !important;
+                    max-width: inherit !important;
+                    line-height: auto !important;
+                    margin-top: 0px !important;
+                    visibility: inherit !important;
+                }
+
+                /* Hides Light Mode-Only Content, Like Images */
+                .light-img { display: none !important; }
+
+                /* Custom Dark Mode Color */
+                .darkColor1 { color: #FFFBF2 !important;}
+
+                /* Custom Dark Mode Background Color */
+                .darkmodeBG1    { background-color: #211D21 !important; }
+                .darkmodeBG2    { background-color: #FFFBF2 !important; }
+                .darkmodeMainBg { background-color: #010A10 !important; }
+            }
+
+            /* Copy dark mode styles for android support */
+            /* Shows Dark Mode-Only Content, Like Images */
+            [data-ogsc] .dark-img {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+                float: none !important;
+                max-height: inherit !important;
+                max-width: inherit !important;
+                line-height: auto !important;
+                margin-top: 0px !important;
+                visibility: inherit !important;
+            }
+
+            /* Hides Light Mode-Only Content, Like Images */
+            [data-ogsc] .light-img { display: none; display: none !important; }
+
+            /* Custom Dark Mode Background Color */
+            [data-ogsc] .darkColor1 { color: #FFFBF2 !important;}
+
+            /* Custom Dark Mode Background Color */
+            [data-ogsc] .darkmodeBG1    { background-color: #211D21 !important; }
+            [data-ogsc] .darkmodeBG2    { background-color: #FFFBF2 !important; }
+            [data-ogsc] .darkmodeMainBg { background-color: #010A10 !important; }
+        </style>
+
+        <!-- Allows for better image rendering on Windows hi-DPI displays. -->
+        <!--[if mso]>
+        <noscript>
+            <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml>
+        </noscript>
+        <![endif]-->
+
+        <!-- Correct superscripts in Outlook -->
+        <!--[if (gte mso 9)|(IE)]>
+        <style>
+            body, table, td, h1, h2, h3, p, a, span {font-family: Helvetica, Arial, sans-serif !important;}
+            sup{font-size:100% !important;}
+            a {text-decoration: none;}
+        </style>
+        <![endif]-->
+
+        <!-- Keep button text white in Outlook dark mode -->
+        <!--[if gte mso 16]> 
+        <style> 
+            .keep-white { 
+                mso-style-textfill-type:gradient; 
+                mso-style-textfill-fill-gradientfill-stoplist:"0 \#FFFFFF 0 100000\,100000 \#FFFFFF 0 100000"; 
+                color:#000000 !important; 
+            } 
+        </style> 
+        <![endif]-->
+    </head>
+
+    <body class="body body-fix" xml:lang="en" style="font-family: 'Manrope', Arial, Helvetica, sans-serif;">
+        <div role="article" aria-roledescription="email" aria-label="Email from Sage Apparel" lang="en" dir="ltr" style="font-family: 'Manrope', Arial, Helvetica, sans-serif;">
+            <!--hidden preheader with preh-header spacer hack-->
+            <div style="display:none;">
+                &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+            </div>
+            <table class="darkmodeMainBg" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="background: #DFE2DB;">
+                <!-- MAIN CONTENT -->
+                <tr>
+                    <td class="tbPad-0" valign="top" style="padding: 32px 0;">
+                        <table class="w100p darkmodeBG1" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" style="background-color: #FFFBF2">
+                            <!-- START of FREE SHIPPING +FREE RETURNS BANNER -->
+                            <tr>
+                                <td align="center" width="100%" style="padding: 4.5px 0; background-color: #DB4914; font-size: 12px;">
+                                    <span class="keep-white" style="font-size: 12px; line-height: 12px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #FFFBF2;">free shipping +free returns</span>
+                                </td>
+                            </tr>
+                            <!-- END of FREE SHIPPING +FREE RETURNS BANNER -->
+
+                            <!-- START of HEADER -->
+                            <tr>
+                                <td class="tbPad-16" align="center" width="100%" style="padding: 24px;">
+                                    <a class="darkColor1 logo" style="display: inline-block; font-size: 40px; line-height: 40px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 800; text-transform: uppercase; text-decoration: none; color: #010A10;" href="http://www.example.com/" target="blank">Sage<span style="display: inline-block; font-weight: 400;">Apparel</span></a>
+                                </td>
+                            </tr>
+                            <!-- END of HEADER -->
+
+                            <!-- START of SPACER -->
+                            <tr>
+                                <td class="darkmodeMainBg" height="24" style="height: 24px; background-color: #DFE2DB;"></td>
+                            </tr>
+                            <!-- END of SPACER -->
+
+                            <!-- START of SAGETOBER SECTION -->
+                            <tr>
+                                <td class="sagetober" align="center" style="padding: 40px 0 24px;">
+                                    <table  border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                    <tr>
+                                                        <td>
+                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                <tr>
+                                                                    <td class="sagetoberLines" style="width: 96px; height: 2px; background-color: #DB4914;"></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td  style="padding: 0 12px;">
+                                                            <span class="sagetoberSubHeaders darkColor1" style="margin: 0; padding: 0; display: inline-block; font-size: 24px; line-height: 32px; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 3px; color: #010A10">The</span>
+                                                        </td>
+                                                        <td>
+                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                <tr>
+                                                                    <td class="sagetoberLines" style="width: 96px; height: 2px; background-color: #DB4914;"></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <h1 class="sagetoberHeader darkColor1" style="margin: 0; padding: 0; font-size: 72px; line-height: 72px; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-transform: uppercase; font-weight: 600; color: #010A10">Sagetober</h1>
+                                            </td>
+                                        </tr>
+                                        <tr>   
+                                            <td align="center" style="padding: 0 12px;">
+                                                <span class="sagetoberSubHeaders darkColor1" style="margin: 0; padding: 0; display: inline-block; font-size: 24px; line-height: 32px; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 3px; color: #010A10">Sales&nbsp;&nbsp;Event</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of SAGETOBER SECTION -->
+
+                            <!-- START of COPY -->
+                            <tr>   
+                                <td align="center" style=" padding: 0 18px 16px;">
+                                    <span class="darkColor1" style="display: inline-block; font-size: 16px; line-height: 24px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 400; text-transform: capitalize; color: #010A10">
+                                        This Season's Top Sellers. This Weekend Only. Crazy Markdowns.
+                                    </span>
+                                </td>
+                            </tr>
+                            <!-- END of COPY -->
+
+                            <!-- START of PHOTO MODULE 1 -->
+                            <tr>
+                                <td style="padding: 0 18px 24px; ">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                        <tr>
+                                            <td align="center" bgcolor="#000000" background="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/7ccd860f-f065-6d7a-b4e5-37f0a055bff6.jpg" width="100%" height="366" valign="top" style="background: url(https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/7ccd860f-f065-6d7a-b4e5-37f0a055bff6.jpg) center / cover no-repeat #000000;">
+                                                <!--[if gte mso 9]>
+                                                <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0; display: inline-block; width: 423pt; height: 274.5pt;" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/7ccd860f-f065-6d7a-b4e5-37f0a055bff6.jpg" /> 
+                                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0; display: inline-block; position: absolute; width: 423pt; height:274.5pt;">
+                                                <v:fill  opacity="0%" color="#000000”  />
+                                                <v:textbox inset="0,0,0,0">
+                                                <![endif]-->
+                                                <div>
+                                                    <div style="font-size: 0;">
+                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                            <tr>
+                                                                <td height="366" align="center">
+                                                                    <h2 class="categoryH2" style="margin: 0; padding: 0; font-size: 22px; line-height: 24px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 400; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 3px; color: #FFFFFF; color: auto;">Coats and Jackets</h2>
+                                                                    <h3 class="categoryH3" style="margin: 0; padding: 0; font-size: 56px; line-height: 72px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 600; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; color: #FFFFFF; color: auto;">UP TO 50% OFF</h3>
+                                                                    <a class="keep-white" rel="noopener" target="_blank" href="http://www.example.com/" target="_blank" style="font-size: 22px; line-height: 24px; font-weight: 700; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-decoration: underline; text-transform: uppercase; letter-spacing: 2px; color: #FFFFFF; color: auto;">Shop Now</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!--[if gte mso 9]>
+                                                </v:textbox>
+                                                </v:fill>
+                                                </v:rect>
+                                                </v:image>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of PHOTO MODULE 1 -->
+
+                            <!-- START of SPACER -->
+                            <tr>
+                                <td class="darkmodeMainBg" height="24" style="height: 24px; background-color: #DFE2DB;"></td>
+                            </tr>
+                            <!-- END of SPACER -->
+
+                            <!-- START of PHOTO MODULE 2 -->
+                            <tr>
+                                <td style="padding: 24px 18px;">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                        <tr>
+                                            <td align="center" bgcolor="#000000" background="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/b4c3c375-2a4b-fdea-98a3-9317d6644bd8.jpg" width="100%" height="366" valign="top" style="background: url(https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/b4c3c375-2a4b-fdea-98a3-9317d6644bd8.jpg) center / cover no-repeat #000000;">
+                                                <!--[if gte mso 9]>
+                                                <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0; display: inline-block; width: 423pt; height: 274.5pt;" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/b4c3c375-2a4b-fdea-98a3-9317d6644bd8.jpg" /> 
+                                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0; display: inline-block; position: absolute; width: 423pt; height:274.5pt;">
+                                                <v:fill  opacity="0%" color="#000000”  />
+                                                <v:textbox inset="0,0,0,0">
+                                                <![endif]-->
+                                                <div>
+                                                    <div style="font-size: 0;">
+                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                            <tr>
+                                                                <td height="366" align="center">
+                                                                    <h2 class="categoryH2" style="margin: 0; padding: 0; font-size: 22px; line-height: 24px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 3px; color: #FFFFFF; color: auto;">Premium Watches</h2>
+                                                                    <h3 class="categoryH3" style="margin: 0; padding: 0; font-size: 56px; line-height: 72px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #FFFFFF; color: auto;">UP TO 85% OFF</h3>
+                                                                    <a class="keep-white" rel="noopener" target="_blank" href="http://www.example.com/" target="_blank" style="font-size: 22px; line-height: 24px; font-weight: 700; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-decoration: underline; text-transform: uppercase; letter-spacing: 1px; color: #FFFFFF; color: auto;">Shop Now</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!--[if gte mso 9]>
+                                                </v:textbox>
+                                                </v:fill>
+                                                </v:rect>
+                                                </v:image>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of PHOTO MODULE 2 -->
+
+                            <!-- START of SPACER -->
+                            <tr>
+                                <td class="darkmodeMainBg" height="24" style="height: 24px; background-color: #DFE2DB;"></td>
+                            </tr>
+                            <!-- END of SPACER -->
+
+                            <!-- START of PHOTO MODULE 3 -->
+                            <tr>
+                                <td style="padding: 24px 18px;">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                        <tr>
+                                            <td align="center" bgcolor="#000000" background="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/5fd09807-61c1-99c2-083c-b7f21e9e9b45.jpg" width="100%" height="366" valign="top" style="background: url(https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/5fd09807-61c1-99c2-083c-b7f21e9e9b45.jpg) center / cover no-repeat #000000;">
+                                                <!--[if gte mso 9]>
+                                                <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0; display: inline-block; width: 423pt; height: 274.5pt;" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/5fd09807-61c1-99c2-083c-b7f21e9e9b45.jpg" /> 
+                                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0; display: inline-block; position: absolute; width: 423pt; height:274.5pt;">
+                                                <v:fill  opacity="0%" color="#000000”  />
+                                                <v:textbox inset="0,0,0,0">
+                                                <![endif]-->
+                                                <div>
+                                                    <div style="font-size: 0;">
+                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                            <tr>
+                                                                <td height="366" align="center">
+                                                                    <h2 class="categoryH2" style="margin: 0; padding: 0; font-size: 22px; line-height: 24px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 3px; color: #FFFFFF; color: auto;">Leather boots</h2>
+                                                                    <h3 class="categoryH3" style="margin: 0; padding: 0; font-size: 56px; line-height: 72px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #FFFFFF; color: auto;">UP TO 45% OFF</h3>
+                                                                    <a class="keep-white" rel="noopener" target="_blank" href="http://www.example.com/" target="_blank" style="font-size: 22px; line-height: 24px; font-weight: 700; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-decoration: underline; text-transform: uppercase; letter-spacing: 1px; color: #FFFFFF; color: auto;">Shop Now</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!--[if gte mso 9]>
+                                                </v:textbox>
+                                                </v:fill>
+                                                </v:rect>
+                                                </v:image>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of PHOTO MODULE 3 -->
+
+                            <!-- START of SPACER -->
+                            <tr>
+                                <td class="darkmodeMainBg" height="24" style="height: 24px; background-color: #DFE2DB;"></td>
+                            </tr>
+                            <!-- END of SPACER -->
+
+                            <!-- START of PHOTO MODULE 4 -->
+                            <tr>
+                                <td style="padding: 24px 18px;">
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                        <tr>
+                                            <td align="center" bgcolor="#000000" background="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/7056635f-a79e-6571-ec18-b11888aa3aa1.jpg" width="100%" height="366" valign="top" style="background: url(https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/7056635f-a79e-6571-ec18-b11888aa3aa1.jpg) center / cover no-repeat #000000;">
+                                                <!--[if gte mso 9]>
+                                                <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0; display: inline-block; width: 423pt; height: 274.5pt;" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/7056635f-a79e-6571-ec18-b11888aa3aa1.jpg" /> 
+                                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0; display: inline-block; position: absolute; width: 423pt; height:274.5pt;">
+                                                <v:fill  opacity="0%" color="#000000”  />
+                                                <v:textbox inset="0,0,0,0">
+                                                <![endif]-->
+                                                <div>
+                                                    <div style="font-size: 0;">
+                                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                            <tr>
+                                                                <td height="366" align="center">
+                                                                    <h2 class="categoryH2" style="margin: 0; padding: 0; font-size: 22px; line-height: 24px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 3px; color: #FFFFFF; color: auto;">Graphic Tees</h2>
+                                                                    <h3 class="categoryH3" style="margin: 0; padding: 0; font-size: 56px; line-height: 72px; font-family: 'Manrope', Arial, Helvetica, sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #FFFFFF; color: auto;">2 for $30</h3>
+                                                                    <a class="keep-white" rel="noopener" target="_blank" href="http://www.example.com/" target="_blank" style="font-size: 22px; line-height: 24px; font-weight: 700; font-family: 'Manrope', Arial, Helvetica, sans-serif; text-decoration: underline; text-transform: uppercase; letter-spacing: 1px; color: #FFFFFF; color: auto;">Shop Now</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!--[if gte mso 9]>
+                                                </v:textbox>
+                                                </v:fill>
+                                                </v:rect>
+                                                </v:image>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of PHOTO MODULE 4 -->
+
+                            <!-- START of SPACER -->
+                            <tr>
+                                <td class="darkmodeMainBg" height="24" style="height: 24px; background-color: #DFE2DB;"></td>
+                            </tr>
+                            <!-- END of SPACER -->
+
+                            <!-- START of FOOTER -->
+                            <tr>
+                                <td class="lrPad-32 darkColor1" align="center" style=" padding: 32px 72px; font-size: 12px; line-height: 18px; font-family: sans-serif; font-weight: 400;  color: #010A10; text-decoration: none; max-width: 440px;">
+                                    <a class="darkColor1" href="https://example.com/" target="_blank" style="color: #010A10; text-decoration: none;">SageApparel.com</a>&nbsp;&nbsp;|&nbsp;
+                                    <a class="darkColor1" href="https://example.com/" target="_blank" style="color: #010A10; text-decoration: none;">FAQ</a>&nbsp;&nbsp;|&nbsp;
+                                    <a class="darkColor1" href="https://example.com/" target="_blank" style="color: #010A10; text-decoration: none;">Contact Us</a>&nbsp;&nbsp;|&nbsp;
+                                    <a class="darkColor1" href="https://example.com/" target="_blank" style="color: #010A10; text-decoration: none;">Your Account</a>&nbsp;&nbsp;|&nbsp;
+                                    <a class="darkColor1" href="https://example.com/" target="_blank" style="color: #010A10; text-decoration: none;">Return Policy</a>
+                                    <br>
+                                    <br>
+                                    <span class="darkColor1" style="color: #010A10;">This email was sent to janeappleseed@gmail.com by noreply@sageapparel.com.</span>
+                                    <span class="darkColor1" style="color: #010A10;">SageApparel.com | 786 Broadway | Suite 712 | New York, NY 10012</span>
+                                </td>
+                            </tr>
+                            <!-- END of FOOTER -->
+
+                            <!-- START of VIEW AND UNSUBSCRIBE BANNER -->
+                            <tr>
+                                <td align="center" style="padding: 6px; background-color: #DB4914; font-size: 12px;">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tr>
+                                        <td align="center" style="padding-right: 12px; font-size: 12px; line-height: 12px; font-family: sans-serif; font-weight: 400; color: #DFE2DB;">
+                                            <a class="keep-white" href="https://example.com/" target="_blank" style="text-decoration: underline; color: #FFFBF2;">View In Browser</a>&nbsp;&nbsp;|&nbsp;
+                                            <a class="keep-white" href="https://example.com/" target="_blank" style="text-decoration: underline; color: #FFFBF2;">Unsubscribe</a>
+                                        </td>            
+                                    </tr>
+                                  </table>
+                                </td>
+                            </tr>
+                            <!-- END of VIEW AND UNSUBSCRIBE BANNER -->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <!-- Help character display properly. -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- Set the initial scale of the email. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Force Outlook clients to render with a better MS engine. -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <!-- Help prevent blue links and autolinking -->
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+        <!-- Prevent Apple from reformatting and zooming messages. -->
+        <meta name="x-apple-disable-message-reformatting">
+        <!-- Target dark mode -->
+        <meta name="color-scheme"            content="light dark">
+        <meta name="supported-color-schemes" content="light dark only">
+        <!-- The title tag -->
+        <title>Chewy Order Confirmation</title>
+
+        <!-- Allows for better image rendering on Windows hi-DPI displays. -->
+        <!--[if mso]>
+        <noscript>
+            <xml>
+                <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml>
+        </noscript>
+        <![endif]-->
+
+        <!-- To support dark mode meta tags -->
+        <style type="text/css">
+            :root {
+                color-scheme: light dark;
+                supported-color-schemes: light dark;
+            }
+        </style>
+
+        <!-- Web fonts / @font-face -->
+        <style>
+            @media screen {
+                /* latin */
+                @font-face {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* latin */
+                @font-face {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+                /* latin */
+                @font-face {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-display: swap;
+                    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format('woff2');
+                    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+                }
+            }
+        </style>
+
+        <!-- Resets -->
+        <style type="text/css">
+            /** Client-specific styles **/
+            /* Stops email clients resizing small text. */
+            body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+            /* Stops Outlook from adding extra spacing to tables. */
+            table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+            /* Uses a better rendering method when resizing images in Outlook IE. */
+            img { -ms-interpolation-mode: bicubic; }
+            
+            /* General reset styles */
+            *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+            body  { width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; }
+            table { border-collapse: collapse !important; }
+            img   { display: block; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+            h1, h2, h3, p { margin: 0; padding: 0; }
+
+            /* Remove underlines from links*/
+            a { text-decoration: none; }
+
+            /* Centre email on Android 4.4 - margin reset */
+            div[style*="margin:16px 0"] {
+                margin: 0 !important;
+            }
+
+            /* Prevent Apple blue links. */
+            a[x-apple-data-detectors] {
+                color: inherit !important;
+                text-decoration: none !important;
+                font-size:   inherit !important;
+                font-family: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+            }
+
+            /* Prevent Gmail blue links. */
+            u + .body a {
+                color: inherit;
+                text-decoration: none;
+                font-size:   inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+
+            .blueLinks a { 
+                color:inherit !important; 
+                text-decoration: none !important; 
+            }
+
+            /* Prevent Samsung blue links. */
+            #MessageViewBody a {
+                color: inherit;
+                text-decoration: none;
+                font-size:   inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+
+            .link:hover { 
+                text-decoration: none !important; 
+            }
+
+            .body-fix {
+                word-spacing: normal;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+        </style>
+
+        <!-- Mobile styles -->
+        <style>
+            @media screen and (max-width:600px) {
+                .h1       { font-size: 32px !important; line-height: 40px !important; }
+                .w100p    { width: 100% !important; }
+                .imgFull  { width: 100% !important; height: auto !important; }
+                .tPad-0   { padding-top:   0 !important; }
+                .rPad-0   { padding-right: 0 !important; }
+                .lrPad-16 { padding-left: 16px !important; padding-right: 16px !important; }
+                .mobileIconImage    { width: 50px !important; height: 43px !important;}
+                .mobileIconSpacing  { padding: 14px 5px !important;}
+                .mobileIconTextSize { font-size: 9px !important; line-height: 11px !important;}
+				.mobileMaxWidth     { max-width: 325px; }
+                .mobileBottomBorder { border-right: none !important;  border-bottom: 1px solid #E5E5E5 !important;}
+            }
+        </style>
+
+        <!-- Dark mode styles -->
+        <style>
+            @media (prefers-color-scheme: dark) {
+                /* Shows Dark Mode-Only Content, Like Images */
+                .dark-img {
+                    display: block !important;
+                    width: auto !important;
+                    overflow: visible !important;
+                    float: none !important;
+                    max-height: inherit !important;
+                    max-width: inherit !important;
+                    line-height: auto !important;
+                    margin-top: 0px !important;
+                    visibility: inherit !important;
+                }
+
+                /* Custom Dark Mode Background Header Color */
+                .darkmode-btn { background-color: #EDF2F4 !important; color: #17192E !important;}
+
+                /* Custom Dark Mode Background Color */
+                .darkmode    { background-color: #121212 !important; }
+                .darkmode2   { background-color: #090909 !important; }
+                .darkmode3   { background-color: #202020 !important; }
+				.darkmodeRed { color: #f50000 !important;}
+
+                /* Custom Dark Mode Font Colors */
+                h1, h2, h3, p { color: #FFFFFF !important; }
+			}
+
+            /* Copy dark mode styles for android support */
+            /* Shows Dark Mode-Only Content, Like Images */
+            [data-ogsc] .dark-img {
+                display: block !important;
+                width: auto !important;
+                overflow: visible !important;
+                float: none !important;
+                max-height: inherit !important;
+                max-width: inherit !important;
+                line-height: auto !important;
+                margin-top: 0px !important;
+                visibility: inherit !important;
+            }
+
+            /* Hides Light Mode-Only Content, Like Images */
+            [data-ogsc] .light-img {
+                display: none;
+                display: none !important;
+            }
+
+            /* Custom Dark Mode Background Color */
+            [data-ogsc] .darkmode  { background-color: #100E11 !important; }
+            [data-ogsc] .darkmode2 { background-color: #090909 !important; }
+            [data-ogsc] .darkmode3 { background-color: #202020 !important; }
+
+            /* Custom Dark Mode Font Colors */
+            [data-ogsc] h1, [data-ogsc] h3, [data-ogsc] p, [data-ogsc] span, [data-ogsc] a { color: #FFFFFF !important; }
+        </style>
+
+        <!-- Correct superscripts in Outlook -->
+        <!--[if (gte mso 9)|(IE)]>
+        <style>
+            body, table, td, h1, h2, h3, p, a, span {font-family: Arial, sans-serif !important;}
+            sup{font-size:100% !important;}
+            a {text-decoration: none;}
+            table {border-collapse: collapse;border-spacing: 0; }
+        </style>
+        <![endif]-->
+
+        <!-- Keep button text white in Outlook dark mode -->
+        <!--[if gte mso 16]> 
+        <style> 
+            .keep-white { 
+                mso-style-textfill-type:gradient; 
+                mso-style-textfill-fill-gradientfill-stoplist:"0 \#FFFFFF 0 100000\,100000 \#FFFFFF 0 100000"; 
+                color:#000000 !important; 
+            } 
+        </style> 
+        <![endif]-->
+    </head>
+
+    <body class="darkmode body body-fix" style="font-family: 'Roboto' Helvetica, Arial, sans-serif;">
+        <div role="article" aria-roledescription="email" aria-label="Email from Chewy" lang="en" dir="ltr" style="font-family: 'Roboto' Helvetica, Arial, sans-serif;">
+            <!--hidden preheader with preh-header spacer hack-->
+            <div style="display:none;">
+                &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+            </div>
+            <table class="darkmode2" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="background: #F6F6F6;">
+                <!-- MAIN CONTENT -->
+                <tr>
+                    <td style="padding: 32px 0;">
+                        <table class="w100p darkmode" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="600" style="background-color: #FFFFFF;">
+                            <!-- START OF HEADER -->
+                            <tr>
+                                <td class="header" align="center" style="padding-top: 45px; padding-bottom: 40px;">
+                                    <img width="124" src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/40134977-12fa-a10a-67e5-044cf1f3cb7d.png" alt="Chewy Logo" style="vertical-align: middle; width: 100%; max-width: 124px;">
+                                </td>
+                            </tr>
+                            <!-- END OF HEADER -->
+
+                            <!-- START OF SUMMARY SECTION -->
+                            <tr>
+                                <td class="lrPad-16">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="max-width: 500px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="500">
+                                    <tr>
+                                    <td align="center" valign="top" width="500">
+                                    <![endif]-->
+                                        <tr>
+                                            <td>
+                                                <h1 class="h1" style="margin: 0; padding: 0; font-size: 40px; line-height: 48px; font-family: 'Roboto', Arial, sans-serif; font-weight: bold; color: #333333; text-align: center;">Thanks For Your Order</h1>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  style="padding-top: 15px; padding-bottom: 20px;">
+                                                <p class="blueLinks"  style="margin: 0; padding: 0; font-size: 18px; line-height: 24px; font-family: 'Roboto', Arial, sans-serif; font-weight: normal; color: #000000; text-align: center;">You'll receive an email when your items are shipped. If you have any questions, call us any time at 1-800-672-4399 or simply reply to this email.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="padding-bottom: 30px;">
+                                                <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                                    <tr>
+                                                        <td>
+                                                            <a class="keep-white" href="https://example.com" target="_blank" style="display: inline-block; padding: 0 1.737em; border-radius: .263em; background-color:#008AF1; font-size: 19px; line-height: 49px; font-family: 'Roboto', Arial, sans-serif; font-weight: 700; text-decoration: none; color: #FFFFFF; mso-padding-alt: 0;">
+                                                                <!--[if mso]>
+                                                                <i style="mso-font-width: 100%; mso-text-raise: 126%;" hidden>&emsp;</i>
+                                                                <span style="mso-text-raise:63%;">
+                                                                <![endif]-->
+                                                                VIEW ORDER STATUS
+                                                                <!--[if mso]>
+                                                                </span>
+                                                                <i style="mso-font-width: 100%;" hidden>&emsp;&#8203;</i>
+                                                                <![endif]-->
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END OF SUMMARY SECTION -->
+
+							<!-- START of TWO COLUMN LAYOUT -->
+                            <tr>
+                                <td class="lrPad-16" align="center" valign="top" style="padding: 0 24px 30px;">
+                                     <table class="mobileMaxWidth" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                                          <tr>
+                                               <td class="darkmode3" align="center" valign="top" style="font-size:0; border: 1px solid #E5E5E5; background-color: #FAFAFA; ">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                                                    <tr>
+                                                    <td valign="top" style="width: 275px;">
+                                                <![endif]-->
+                                                    <div class="w100p" class="rPad-0" style="display:inline-block;vertical-align:top;">
+														<table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width: 275px;">
+															<tr>
+																<td class="mobileBottomBorder" align="center" valign="top" style="border-right: 1px solid #E5E5E5;">
+																	<table align="left"  border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+																		<tr>
+																			<td style="padding: 18px 18px 18px 23px; width: 100%;">
+																				<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+																					<tr>
+																						<td style="padding-bottom: 8px;">
+																							<h2 style="margin: 0; padding: 0; font-size: 16px; font-weight: 900; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #333333;">SUMMARY:</h2>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td>
+																							<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+																								<tr>
+																									<td style="padding-bottom: 5px;">
+																										<p align="left"  style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Order #:</p>
+																									</td>
+																									<td style="padding-bottom: 5px;">
+																										<p align="right" style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">65006500</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td style="padding-bottom: 5px;">
+																										<p align="left"  style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Order Date:</p>
+																									</td>
+																									<td style="padding-bottom: 5px;">
+																										<p align="right" style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Aug 3, 2023</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td style="padding-bottom: 10px;">
+																										<p align="left"  style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Order Total:</p>
+																									</td>
+																									<td style="padding-bottom: 10px;">
+																										<p align="right" style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">$214.30</p>
+																									</td>
+																								</tr>
+																								<tr>
+																									<td>
+																										<p class="darkmodeRed" align="left"  style="margin: 0; padding: 0; color: #bc0101; font-weight: bold; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">You saved $19.93!</p>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" style="width:275px;">
+                                                <![endif]-->
+                                                    <div class="w100p" style="display:inline-block;vertical-align:top;">
+                                                        <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width:275px;">
+                                                            <tr>
+                                                                <td>
+                                                                   <table align="left"  border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+																	<tr>
+																		<td style="padding: 18px 18px 18px 23px;">
+																			<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+																				<tr>
+																					<td style="padding-bottom: 8px;">
+																						<h2 style="margin: 0; padding: 0; font-size: 16px; font-weight: 900; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #333333;">SHIPPING ADDRESS:</h2>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+																							<tr>
+																								<td style="padding-bottom: 5px;">
+																									<p align="left"  style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Smiles Davis</p>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="padding-bottom: 5px;">
+																									<p align="left"  style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">123 Somewhere St</p>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="padding-bottom: 5px;">
+																									<p align="left"  style="margin: 0; padding: 0; color: #000000; font-size: 16px; font-family: 'Roboto', Arial, Helvetica, sans-serif;">Somewhere, USA 65060</p>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                        </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    </tr>
+                                                    </table>
+                                                <![endif]-->
+                                               </td>
+                                          </tr>
+                                     </table>
+                                </td>
+                            </tr>
+                            <!-- END of TWO COLUMN LAYOUT -->
+
+                            <!-- START of ITEMS ORDERED HEADER -->
+							<tr>
+								<td align="center" class="lrPad-16" style="padding: 0 24px;">
+									<table class="mobileMaxWidth" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+										<tr>
+											<td class="darkmode3" style="padding: 15px 12px; background-color: #FAFAFA; border-bottom: 1px solid #E5E5E5;">
+												<h2 style="font-size: 16px; font-weight: 900; font-family: 'Roboto', Arial, Helvetica, sans-serif; color: #333333;">ITEMS ORDERED</h2>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+                            <!-- END of ITEMS ORDERED HEADER -->
+
+                            <!-- START of TWO COLUMN ITEMS ORDERED LAYOUT 1 -->
+                            <tr>
+                                <td class="lrPad-16" align="center" valign="top" style="padding: 24px 24px 0 24px;">
+                                     <table class="mobileMaxWidth" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                          <tr>
+                                               <td align="center" valign="top" style="font-size:0; border-bottom: 1px solid #E5E5E5; padding-bottom: 24px;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                                                    <tr>
+                                                    <td valign="top" style="width: 264px;">
+                                                <![endif]-->
+                                                    <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 25px;">
+                                                         <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width: 202px;">
+                                                              <tr>
+                                                                   <td align="left" valign="top">
+                                                                        <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/8e5f5e5c-8df3-84d5-bfe9-abecbe8be6da.jpg" alt="Julius-K9 IDC Powerharness Nylon Reflective No Pull Dog Harness, USA Flag, Size 1: 26 to 33.5-in chest" width="202" height="202" style="width: 100%; display: block;">
+                                                                   </td>
+                                                              </tr>
+                                                         </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" style="width:24px;"></td>
+                                                    <td valign="top" style="width:264px;">
+                                                <![endif]-->
+                                                    <div style="display:inline-block;vertical-align:top;">
+                                                        <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width:325px;">
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding: 20px 0 14px;">
+                                                                    <h3 style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0; text-align: left;">Julius-K9 IDC Powerharness Nylon Reflective No Pull Dog Harness</h3>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">       
+                                                                    <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">Price: <span style="font-weight: normal;">$41.56</span></p>
+                                                                </td>
+                                                            </tr>
+                                                           <tr>
+                                                                <td style="padding-top: 4px;">
+                                                                    <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">QTY: <span style="font-weight: normal;">1</span></p>
+                                                                </td>
+                                                           </tr>
+                                                        </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    </tr>
+                                                    </table>
+                                                <![endif]-->
+                                               </td>
+                                          </tr>
+                                     </table>
+                                </td>
+                            </tr>
+                            <!-- END of TWO COLUMN ITEMS ORDERED LAYOUT 1 -->
+
+                            <!-- START of TWO COLUMN ITEMS ORDERED LAYOUT 2 -->
+                            <tr>
+                                <td class="lrPad-16" align="center" valign="top" style="padding: 24px 24px 0 24px;">
+                                     <table class="mobileMaxWidth" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                          <tr>
+                                               <td align="center" valign="top" style="font-size:0; border-bottom: 1px solid #E5E5E5; padding-bottom: 24px;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                                                    <tr>
+                                                    <td valign="top" style="width: 264px;">
+                                                <![endif]-->
+                                                    <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 25px;">
+                                                         <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width: 202px;">
+                                                              <tr>
+                                                                   <td align="left" valign="top">
+                                                                        <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/72a1be69-189f-5599-a4ee-537b732ad074.jpg" alt="Starter Kit - Frisco Heavy Duty Fold & Carry Double Door Collapsible Wire Dog Crate, 48 inch + 3 other items" width="202" height="202" style="width: 100%; display: block;">
+                                                                   </td>
+                                                              </tr>
+                                                         </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" style="width:24px;"></td>
+                                                    <td valign="top" style="width:264px;">
+                                                <![endif]-->
+                                                    <div style="display:inline-block;vertical-align:top;">
+                                                        <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width:325px;">
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding: 20px 0 14px;">
+                                                                    <h3 style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0; text-align: left;">Starter Kit - Frisco Heavy Duty Fold & Carry Double Door Collapsible Wire Dog Crate + 3 other items</h3>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">       
+                                                                    <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">Price: <span style="font-weight: normal;">$139.84</span></p>
+                                                                </td>
+                                                            </tr>
+                                                           <tr>
+                                                                <td style="padding-top: 4px;">
+                                                                    <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">QTY: <span style="font-weight: normal;">1</span></p>
+                                                                </td>
+                                                           </tr>
+                                                        </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    </tr>
+                                                    </table>
+                                                <![endif]-->
+                                               </td>
+                                          </tr>
+                                     </table>
+                                </td>
+                            </tr>
+                            <!-- END of TWO COLUMN ITEMS ORDERED LAYOUT 2 -->
+
+                            <!-- START of TWO COLUMN ITEMS ORDERED LAYOUT 3 -->
+                            <tr>
+                                <td class="lrPad-16" align="center" valign="top" style="padding: 24px 24px 0 24px;">
+                                     <table class="mobileMaxWidth" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+                                          <tr>
+                                               <td align="center" valign="top" style="font-size:0; border-bottom: 1px solid #E5E5E5; padding-bottom: 24px;">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                                                    <tr>
+                                                    <td valign="top" style="width: 264px;">
+                                                <![endif]-->
+                                                    <div class="rPad-0" style="display:inline-block;vertical-align:top; padding-right: 25px;">
+                                                         <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width: 202px;">
+                                                              <tr>
+                                                                   <td align="left" valign="top">
+                                                                        <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/3dd8f840-4348-5c90-a166-65b01cd5984b.jpg" alt="Otterly Pets Assorted Medium to Large Rope Dog Toys, 5 count" width="202" height="202" style="width: 100%; display: block;">
+                                                                   </td>
+                                                              </tr>
+                                                         </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    <td valign="top" style="width:24px;"></td>
+                                                    <td valign="top" style="width:264px;">
+                                                <![endif]-->
+                                                    <div style="display:inline-block;vertical-align:top;">
+                                                        <table class="w100p" border="0" cellpadding="0" cellspacing="0" role="presentation" dir="ltr" style="width:325px;">
+                                                            <tr>
+                                                                <td align="left" valign="top" style="padding: 20px 0 14px;">
+                                                                    <h3 style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0; text-align: left;">Otterly Pets Assorted Medium to Large Rope Dog Toys, 5 count</h3>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">       
+                                                                    <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">Price: <span style="font-weight: normal;">$17.95</span></p>
+                                                                </td>
+                                                            </tr>
+                                                           <tr>
+                                                                <td style="padding-top: 4px;">
+                                                                    <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; line-height: 24px; color:#2B2D42; margin: 0; padding:0; text-align: left;">QTY: <span style="font-weight: normal;">1</span></p>
+                                                                </td>
+                                                           </tr>
+                                                        </table>
+                                                    </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    </tr>
+                                                    </table>
+                                                <![endif]-->
+                                               </td>
+                                          </tr>
+                                     </table>
+                                </td>
+                            </tr>
+                            <!-- END of TWO COLUMN ITEMS ORDERED LAYOUT 3 -->
+
+                            <!-- START of ORDER TOTAL SECTION -->
+                            <tr>
+                                <td style="padding: 24px 25px;" align="center">
+                                    <table class="mobileMaxWidth" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <table class="mobileMaxWidth" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                    <tr>
+                                                        <td align="left" valign="top" style="padding-bottom: 16px;">
+                                                            <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0;">Subtotal (3 Items):</p>
+                                                        </td>
+                                                        <td align="right" valign="top">
+                                                            <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0;">$199.35</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="left" valign="top" style="padding-bottom: 16px;">
+                                                            <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0;">VIP Discount:</p>
+                                                        </td>
+                                                        <td align="right" valign="top">
+                                                            <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0;">-$19.93</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="left" valign="top" style="padding-bottom: 16px;">
+                                                            <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0;">Flat-Rate Shipping:</p>
+                                                        </td>
+                                                        <td align="right" valign="top">
+                                                            <p class="darkmodeRed" style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 18px; line-height: 24px; color:#bc0101; margin:0; padding:0;">$FREE</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="left" valign="top" style="padding-bottom: 16px;">
+                                                            <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0;">Estimated Tax:</p>
+                                                        </td>
+                                                        <td align="right" valign="top">
+                                                            <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0;">$13.46</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="left" valign="top">
+                                                            <p style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 18px; line-height: 24px; color:#2B2D42; margin:0; padding:0;">Order Total:</p>
+                                                        </td>
+                                                        <td align="right" valign="top">
+                                                            <p class="darkmodeRed" style="font-family:'Roboto', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 18px; line-height: 24px; color:#bc0101; margin:0; padding:0;">$192.88</p>
+                                                        </td>
+                                                    </tr>
+                                            
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of ORDER TOTAL SECTION -->
+
+                            <!-- START of PHONE NUMBER SECTION -->
+                            <tr>
+                                <td height="58" style="height: 58px; background-color: #128CED;">
+                                    <p class="keep-white blueLinks" style="margin: 0; padding: 0;  text-align: center; color: #FFFFFF; font-size: 18px; line-height: 18px; font-weight: 700; font-family: 'Roboto', Helvetica, Arial, sans-serif;">Call us 24/7 at 1-800-672-4399</p>
+                                </td>
+                            </tr>
+                            <!-- END of PHONE NUMBER SECTION -->
+
+                            <!-- START of ICONS SECTION -->
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; border-bottom: 1px solid #E5E5E5;">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/a97c6ca8-18b5-5508-1562-f4aac2be0a0c.jpg" width="154" alt="24/7 Customer Service" style="width: 100%; display: block;">
+                                            </td>
+                                            <td align="center">
+                                                <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/95a3054b-9d26-7572-17b6-bd39867af3d3.jpg" width="150" alt="Free Shipping on Orders over $49.00" style="width: 100%; display: block;">
+                                            </td>
+                                            <td align="center">
+                                                <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/847f1347-3bdc-d8e9-1d19-cc642f1fc019.jpg" width="150" alt="100% Satisfaction Guaranteed" style="width: 100%; display: block;">
+                                            </td>
+                                            <td align="center">
+                                                <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/a25c7907-f2a4-0c13-77f3-eb7066538f6a.jpg" width="146" alt="Hassle-Free Returns" style="width: 100%; display: block;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of ICONS SECTION -->
+
+                            <!-- START of FOOTER -->
+                            <tr>
+                                <td class="lrPad-16" align="center" valign="top" style="padding: 24px 30px;">
+                                    <table class="mobileMaxWidth" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+                                        <tr>
+                                            <td align="center" style="padding-bottom: 16px;">
+                                                <img src="https://mcusercontent.com/62ab5fc11c3226d9939eb036b/images/da0b77cd-62d6-e5c8-32a8-dbf1881edc31.png" alt="Chewy Logo">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-bottom: 8px;">
+                                                <p style="color: #999999; font-size: 12px; font-family: Helvetica, Arial, sans-serif; text-align: center;">© 2023. All Rights Reserved.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-bottom: 8px;">
+                                                <p style="color: #999999; font-size: 12px; font-family: Helvetica, Arial, sans-serif; text-align: center;">This email was sent by: <a style="color: #128ced !important; text-decoration: underline;" href="https://www.chewy.com" target="_blank">Chewy.com</a> </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="color: #999999; font-size: 12px; font-family: Helvetica, Arial, sans-serif; text-align: center;">1855 Griffin Road Suite #B-328, Dania Beach, FL 33004, United States</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- END of FOOTER -->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+

@@ -13,7 +13,6 @@
     @include mq(large) {
         align-items: initial;
         gap: rem(120px);
-        
     }
     &:last-child { 
         margin-bottom: rem(80px);
@@ -23,6 +22,15 @@
         @include mq(large) {
             margin-bottom: rem(150px);
         }
+    }
+}
+
+.projects__image {
+    width: 100%;
+    height: auto;
+    max-width: rem(488px);
+    @include mq(medium) {
+        width: 50%;
     }
 }
 
